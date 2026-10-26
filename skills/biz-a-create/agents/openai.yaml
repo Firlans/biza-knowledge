@@ -1,0 +1,4 @@
+interface:
+  display_name: "Biz-A Create"
+  short_description: "Buat module Biz-A baru ala Firlan"
+  default_prompt: "Use $biz-a-create to build a new Biz-A module in Firlan style."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Biz-A Simplify"
+  short_description: "Sederhanakan code Biz-A ala Firlan"
+  default_prompt: "Use $biz-a-simplify to simplify overly indirect Biz-A code in Firlan style."

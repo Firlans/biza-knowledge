@@ -1,0 +1,4 @@
+interface:
+  display_name: "Biz-A Debug"
+  short_description: "Debug module Biz-A ala Firlan"
+  default_prompt: "Use $biz-a-debug to debug a Biz-A module and find the root cause."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Biz-A Planner"
+  short_description: "Susun rencana implementasi module Biz-A"
+  default_prompt: "Use $biz-a-planner to inspect this Biz-A task and write an implementation plan."

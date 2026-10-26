@@ -1,0 +1,748 @@
+{
+  "date": "2026-10-23",
+  "backup": "C:\\Users\\USER~1.DES\\AppData\\Local\\Temp\\biza-ai-centralize-9tk1cr35",
+  "files": [
+    {
+      "source": "user/.codex/skills/biz-a-control-center/agents/openai.yaml",
+      "destination": ".agents/skills/biz-a-control-center/agents/openai.yaml",
+      "sha256": "9e5b96fd72b981270fc0299dcbb499fad42f8db41398eae7198ea4d036bbebc7",
+      "final_sha256": "9e5b96fd72b981270fc0299dcbb499fad42f8db41398eae7198ea4d036bbebc7"
+    },
+    {
+      "source": "user/.codex/skills/biz-a-control-center/SKILL.md",
+      "destination": ".agents/skills/biz-a-control-center/SKILL.md",
+      "sha256": "8c24fa5633cef94391d340179a04f83f906358fc070b1eaafc359af98feb093d",
+      "final_sha256": "63cd63f89bb290366204a3e53f2d3abc42fde1a4495055fe4a21ae31fd56e26a"
+    },
+    {
+      "source": "user/.codex/skills/biz-a-create/agents/openai.yaml",
+      "destination": ".agents/skills/biz-a-create/agents/openai.yaml",
+      "sha256": "fbebf660d107dc0ef3daeb2454ba36195f71616cf21ba1dfc35e07d5b2f64a7d",
+      "final_sha256": "fbebf660d107dc0ef3daeb2454ba36195f71616cf21ba1dfc35e07d5b2f64a7d"
+    },
+    {
+      "source": "user/.codex/skills/biz-a-create/SKILL.md",
+      "destination": ".agents/skills/biz-a-create/SKILL.md",
+      "sha256": "4873c186241030ebc81077c0ca99bd729499f88c1657d946207f7e197bd78c72",
+      "final_sha256": "2670e8c442d3ccce4b72d9ca490cdbac5145e3a097d7b4ac84474bc5ca2e503b"
+    },
+    {
+      "source": "user/.codex/skills/biz-a-debug/agents/openai.yaml",
+      "destination": ".agents/skills/biz-a-debug/agents/openai.yaml",
+      "sha256": "32eed2bfa7b78125835b9eb917c8f26a18f106b3ed62cbe88050d4e71c39daa3",
+      "final_sha256": "32eed2bfa7b78125835b9eb917c8f26a18f106b3ed62cbe88050d4e71c39daa3"
+    },
+    {
+      "source": "user/.codex/skills/biz-a-debug/SKILL.md",
+      "destination": ".agents/skills/biz-a-debug/SKILL.md",
+      "sha256": "fc7f48c0ea31f127ebd43859356b33098635abe301c741b896faf70a4dee06b2",
+      "final_sha256": "3b10712efc0953efa5fd403d5e78c1e33f42bda5ed04dce02b224ab637795778"
+    },
+    {
+      "source": "user/.codex/skills/biz-a-normalize/agents/openai.yaml",
+      "destination": ".agents/skills/biz-a-normalize/agents/openai.yaml",
+      "sha256": "aa78b824042ba0b92aefcfc826ee69bf90cb9e64505d69e5cea9e83c06456322",
+      "final_sha256": "aa78b824042ba0b92aefcfc826ee69bf90cb9e64505d69e5cea9e83c06456322"
+    },
+    {
+      "source": "user/.codex/skills/biz-a-normalize/SKILL.md",
+      "destination": ".agents/skills/biz-a-normalize/SKILL.md",
+      "sha256": "80d0d96871728699b0e6b0b9a87c30abf6d8e78c4dd947cced93f828fa755752",
+      "final_sha256": "e43d7fabdca84d94774a9b095d19fecf8a6d30ee293f42fb522a79821655589f"
+    },
+    {
+      "source": "user/.codex/skills/biz-a-planner/agents/openai.yaml",
+      "destination": ".agents/skills/biz-a-planner/agents/openai.yaml",
+      "sha256": "bc0a9613dc7aeafedb4d7a1fc864ff78287f6a18ff61d04e008f4d25e4ffd686",
+      "final_sha256": "bc0a9613dc7aeafedb4d7a1fc864ff78287f6a18ff61d04e008f4d25e4ffd686"
+    },
+    {
+      "source": "user/.codex/skills/biz-a-planner/SKILL.md",
+      "destination": ".agents/skills/biz-a-planner/SKILL.md",
+      "sha256": "2e0b38ce9a40156222b6b91fa59ee4182af184061dda52d18e3a4dc51dfb1814",
+      "final_sha256": "c2365a14074c338d982f261c0d5591ca4d844d78b7bc0211fa2595cae83d0b39"
+    },
+    {
+      "source": "user/.codex/skills/biz-a-refactor/agents/openai.yaml",
+      "destination": ".agents/skills/biz-a-refactor/agents/openai.yaml",
+      "sha256": "55a28c9bba5996cf6c27bc6b9ff8f541534e32fab621d6f93e9d6812cacf771b",
+      "final_sha256": "55a28c9bba5996cf6c27bc6b9ff8f541534e32fab621d6f93e9d6812cacf771b"
+    },
+    {
+      "source": "user/.codex/skills/biz-a-refactor/SKILL.md",
+      "destination": ".agents/skills/biz-a-refactor/SKILL.md",
+      "sha256": "c22f7393f49c5ef3225ff150f779098a11e8b125b34a1e0202251c751ab71d75",
+      "final_sha256": "6b09de4520b7009b24da99578b0cd425a13ab849c80bd1677dd8d1aef7679a73"
+    },
+    {
+      "source": "user/.codex/skills/biz-a-reviewer/agents/openai.yaml",
+      "destination": ".agents/skills/biz-a-reviewer/agents/openai.yaml",
+      "sha256": "28220e97e6061222113eeddde08237a67d97de5650385827c07a391e458ad971",
+      "final_sha256": "28220e97e6061222113eeddde08237a67d97de5650385827c07a391e458ad971"
+    },
+    {
+      "source": "user/.codex/skills/biz-a-reviewer/SKILL.md",
+      "destination": ".agents/skills/biz-a-reviewer/SKILL.md",
+      "sha256": "b37201a5b16d5ab9b6dde3b9564ad1a3a27fc52c2c2008deeee9991bae174680",
+      "final_sha256": "e497674fa6acbe2f50eb891bc9945104cd59ea7b6db7b6f86d6376ea68df2595"
+    },
+    {
+      "source": "user/.codex/skills/biz-a-simplify/agents/openai.yaml",
+      "destination": ".agents/skills/biz-a-simplify/agents/openai.yaml",
+      "sha256": "9a7e67483ee42f9e93bcf1a95568320dab1d49d5bb50506d67c899da4970ddfa",
+      "final_sha256": "9a7e67483ee42f9e93bcf1a95568320dab1d49d5bb50506d67c899da4970ddfa"
+    },
+    {
+      "source": "user/.codex/skills/biz-a-simplify/SKILL.md",
+      "destination": ".agents/skills/biz-a-simplify/SKILL.md",
+      "sha256": "5488c727a9e7aee233082642bbedfed23dbc26246b88fcde4acb6d8db976927a",
+      "final_sha256": "b290d1a8cbe8636325f7616699855caf3d636df3f6ea481b578fd9d8045877c2"
+    },
+    {
+      "source": "user/.codex/skills/lock-changes/agents/openai.yaml",
+      "destination": ".agents/skills/lock-changes/agents/openai.yaml",
+      "sha256": "12707ca087e83d05078e05f099dab7a9a7de2f67cc53f9f36026a8435f205f7a",
+      "final_sha256": "12707ca087e83d05078e05f099dab7a9a7de2f67cc53f9f36026a8435f205f7a"
+    },
+    {
+      "source": "user/.codex/skills/lock-changes/SKILL.md",
+      "destination": ".agents/skills/lock-changes/SKILL.md",
+      "sha256": "c8afecd639c0a0260c75b7188bc02d378263b87bbb5b8262e76ad610d3e46f99",
+      "final_sha256": "c8afecd639c0a0260c75b7188bc02d378263b87bbb5b8262e76ad610d3e46f99"
+    },
+    {
+      "source": "user/.codex/skills/pdf/agents/openai.yaml",
+      "destination": ".agents/skills/pdf/agents/openai.yaml",
+      "sha256": "48d488770edf103fa945b20a70834a135c224e949d772b502ea992ea03120cf6",
+      "final_sha256": "48d488770edf103fa945b20a70834a135c224e949d772b502ea992ea03120cf6"
+    },
+    {
+      "source": "user/.codex/skills/pdf/assets/pdf.png",
+      "destination": ".agents/skills/pdf/assets/pdf.png",
+      "sha256": "17da356d195d4e3fa24f9becbee6b8d9e60e13005762b5ab0809c520c76da6ee",
+      "final_sha256": "17da356d195d4e3fa24f9becbee6b8d9e60e13005762b5ab0809c520c76da6ee"
+    },
+    {
+      "source": "user/.codex/skills/pdf/LICENSE.txt",
+      "destination": ".agents/skills/pdf/LICENSE.txt",
+      "sha256": "44e03f7e263eb3ad256440c1eeab5e49168baff5a78ecef9a5447261cf3a91bc",
+      "final_sha256": "44e03f7e263eb3ad256440c1eeab5e49168baff5a78ecef9a5447261cf3a91bc"
+    },
+    {
+      "source": "user/.codex/skills/pdf/SKILL.md",
+      "destination": ".agents/skills/pdf/SKILL.md",
+      "sha256": "724b72c932053fd87133144405b00fbeec30285ee770168328c8f591ec89c134",
+      "final_sha256": "724b72c932053fd87133144405b00fbeec30285ee770168328c8f591ec89c134"
+    },
+    {
+      "source": "user/.agents/skills/context7-mcp/SKILL.md",
+      "destination": ".agents/skills/context7-mcp/SKILL.md",
+      "sha256": "29ef59d342876991f1a07297959748b57647063b1f7c7db4761fd36137655ade",
+      "final_sha256": "29ef59d342876991f1a07297959748b57647063b1f7c7db4761fd36137655ade"
+    },
+    {
+      "source": "project/.github/instructions/references/attachment-blob-querydata-problem.md",
+      "destination": ".agents/references/attachment-blob-querydata-problem.md",
+      "sha256": "093ec5892327421791370eda277adf6bf4e007bc77aed7695b1aed8f62ee8f20",
+      "final_sha256": "093ec5892327421791370eda277adf6bf4e007bc77aed7695b1aed8f62ee8f20"
+    },
+    {
+      "source": "project/.github/instructions/references/bankbook-biza-approved-filter-problem.md",
+      "destination": ".agents/references/bankbook-biza-approved-filter-problem.md",
+      "sha256": "9e8a67b8989be534ac75a6ab60bf9cb39811056b49198fd614ab424f8cac97df",
+      "final_sha256": "7bdc1cf59cb58bd1dab2e754b805997b505bf4a62570d34ebe32cea2cc1a3917"
+    },
+    {
+      "source": "project/.github/instructions/references/bankbook-source-navigation-mode-problem.md",
+      "destination": ".agents/references/bankbook-source-navigation-mode-problem.md",
+      "sha256": "76d3e12e73882742bd4531e4720d5c5fbc6bb585f140b5d42668ebed93c3a87b",
+      "final_sha256": "76d3e12e73882742bd4531e4720d5c5fbc6bb585f140b5d42668ebed93c3a87b"
+    },
+    {
+      "source": "project/.github/instructions/references/biz-a-control-center-approval-workflow-rules.md",
+      "destination": ".agents/references/biz-a-control-center-approval-workflow-rules.md",
+      "sha256": "c13d3cf11f2dfe9e9349c6a5a2a67709487d50042422df025a51fbd43bb86fae",
+      "final_sha256": "c13d3cf11f2dfe9e9349c6a5a2a67709487d50042422df025a51fbd43bb86fae"
+    },
+    {
+      "source": "project/.github/instructions/references/biz-a-control-center-config-rules.md",
+      "destination": ".agents/references/biz-a-control-center-config-rules.md",
+      "sha256": "d452278b06e432eac0d53ef0862b653e18fb30bd6af519a7fa84dfe340f53bc4",
+      "final_sha256": "cc7e87006522302986b22331bb79f61a5a5d2883442aafa5d621a80563a419d7"
+    },
+    {
+      "source": "project/.github/instructions/references/biz-a-date-conversion-invalid-date-problem.md",
+      "destination": ".agents/references/biz-a-date-conversion-invalid-date-problem.md",
+      "sha256": "b684f39650fbfe07eae044974aa733090ab7e24c51ef6f9224190f6114721ee5",
+      "final_sha256": "a32f08c944af0af0998ce53a47b5abf04e9d32140bede2061eb0024cb884f9d6"
+    },
+    {
+      "source": "project/.github/instructions/references/biz-a-normalize-pattern-rules.md",
+      "destination": ".agents/references/biz-a-normalize-pattern-rules.md",
+      "sha256": "565cd2cb311370ed92dc6f20e795535e99846295b027cc01da1c27ceb2589e76",
+      "final_sha256": "55097be7574e31dc2b22c8c06a9c791dfd3f482a5a95d977b6f42f2ae4fe190a"
+    },
+    {
+      "source": "project/.github/instructions/references/biz-a-query-join-depth-problem.md",
+      "destination": ".agents/references/biz-a-query-join-depth-problem.md",
+      "sha256": "a3b16220dd7e348f20645c21f8fcfaddde39e4109ada9d7c1723b749ce56dbf3",
+      "final_sha256": "a3b16220dd7e348f20645c21f8fcfaddde39e4109ada9d7c1723b749ce56dbf3"
+    },
+    {
+      "source": "project/.github/instructions/references/cli-script-ftp-data-sync-problem.md",
+      "destination": ".agents/references/cli-script-ftp-data-sync-problem.md",
+      "sha256": "476c84c2f748e9e81951c63ab96dbf12b194e32139df7aaa4f09ab5e78bb4f72",
+      "final_sha256": "33b10f770f2933d360ef037e171ec63e226bc8404b12d9792eb4d6e24e4fa4f6"
+    },
+    {
+      "source": "project/.github/instructions/references/cli-script-standard-problem.md",
+      "destination": ".agents/references/cli-script-standard-problem.md",
+      "sha256": "b5fbbddd53464aac3a45da7be41d2655e07f3f0648859b96feaa5f76d93c9f4e",
+      "final_sha256": "438ca3eee6ee5b9660d9d145829303147731bf9f06c05fe597c5ece7cf042e99"
+    },
+    {
+      "source": "project/.github/instructions/references/creation-checklist.md",
+      "destination": ".agents/references/creation-checklist.md",
+      "sha256": "c747fa2f34025d7dbc87a7e306d60251701f679cb4bd8b2f1443b6d43166bf44",
+      "final_sha256": "c747fa2f34025d7dbc87a7e306d60251701f679cb4bd8b2f1443b6d43166bf44"
+    },
+    {
+      "source": "project/.github/instructions/references/database-standard-rules.md",
+      "destination": ".agents/references/database-standard-rules.md",
+      "sha256": "9b06c183fb01907eab48a603ecf9930bd6fcb2f355194faa5dbfbdae4b3d9ffa",
+      "final_sha256": "1ae8acd9872ed64f3045586a11ffcf66d1a47f59d472f9b26fd08e481f84e49b"
+    },
+    {
+      "source": "project/.github/instructions/references/debug-reference.md",
+      "destination": ".agents/references/debug-reference.md",
+      "sha256": "b0ece7d40388019c5df2deacf2f057c9052af4ab40647734c01a506abf2b256e",
+      "final_sha256": "b0ece7d40388019c5df2deacf2f057c9052af4ab40647734c01a506abf2b256e"
+    },
+    {
+      "source": "project/.github/instructions/references/detail-grid-column-style-problem.md",
+      "destination": ".agents/references/detail-grid-column-style-problem.md",
+      "sha256": "878297e02dc48173d0dd4082ddaaa9b45c7d9fa15e1cd3ebb9803d28d38d9968",
+      "final_sha256": "b8dc09a95ba18a54b34d6cb2a5db8cbe4df6d5b08b4fea4f022c6baabc5f3bc1"
+    },
+    {
+      "source": "project/.github/instructions/references/detail-grid-dynamic-column-expression-problem.md",
+      "destination": ".agents/references/detail-grid-dynamic-column-expression-problem.md",
+      "sha256": "63fe592a1d66d482229331352295877ff3516c968a783616fe7136330ee4cdf7",
+      "final_sha256": "0643cb6dae692cda6f1964ddb058e42ddfc3096e999a5d9a10388826b7761424"
+    },
+    {
+      "source": "project/.github/instructions/references/detail-grid-enter-navigation-problem.md",
+      "destination": ".agents/references/detail-grid-enter-navigation-problem.md",
+      "sha256": "7687d20203e87d6e3b79f414508c18e48415ee6eed171304d654a938ed3ebd84",
+      "final_sha256": "e044aa5f31eace448a97836becc3abbdfb1c6dd11080598a7e53704319309682"
+    },
+    {
+      "source": "project/.github/instructions/references/detail-grid-fina-extended-field-problem.md",
+      "destination": ".agents/references/detail-grid-fina-extended-field-problem.md",
+      "sha256": "114b14d4673ab2551dda36cbb04174c51d6179bc7beaa52f06eb99caec37baad",
+      "final_sha256": "b7f777c1d45b5727019da20e2d2ede33ff29b30a5087c96c973e6c5ed9f65344"
+    },
+    {
+      "source": "project/.github/instructions/references/detail-grid-manual-action-buttons-problem.md",
+      "destination": ".agents/references/detail-grid-manual-action-buttons-problem.md",
+      "sha256": "e03643422d36763f3d7f30872b18ba3698b858b604d70dd5c022ba8e61ce315a",
+      "final_sha256": "d461ecabacfa288b1b78e8a70f78f018d689e8fdfb1cee1c2f1c65ce53c096c5"
+    },
+    {
+      "source": "project/.github/instructions/references/detail-grid-oncalc-event-loop-problem.md",
+      "destination": ".agents/references/detail-grid-oncalc-event-loop-problem.md",
+      "sha256": "44043b950fb015f2c6f65adb89b2b5a118f2b824623471bbc2c5aebf4589f035",
+      "final_sha256": "bd0db9861ad9162c61f20f55ce20815557a04b899f9fb98b3856d5c2d5fe564d"
+    },
+    {
+      "source": "project/.github/instructions/references/detail-grid-scroll-sizing-alignment-problem.md",
+      "destination": ".agents/references/detail-grid-scroll-sizing-alignment-problem.md",
+      "sha256": "35d73b47451dd14c0acea298b615ae1017cbfeb3e62a2ae76e86c1a40c5c2e9a",
+      "final_sha256": "35d73b47451dd14c0acea298b615ae1017cbfeb3e62a2ae76e86c1a40c5c2e9a"
+    },
+    {
+      "source": "project/.github/instructions/references/detail-grid-state-sync-problem.md",
+      "destination": ".agents/references/detail-grid-state-sync-problem.md",
+      "sha256": "4ad9ac68e23d7c1fe261708c75bb095d620783e7a53fe54a20038843f91e3305",
+      "final_sha256": "0f9e2fe78a94ee26a3ea393b73b785693d898aec0698c312d36730d5f0e16d0e"
+    },
+    {
+      "source": "project/.github/instructions/references/detail-grid-table-header-layout-problem.md",
+      "destination": ".agents/references/detail-grid-table-header-layout-problem.md",
+      "sha256": "cfbc1cdb33d8212558099573cb3e7510bd103db3975dec050973bcbb767d4968",
+      "final_sha256": "33b2eda0ef38b69557b81a43121f23ebf75e1b6c5e83d95770812a4733cdf325"
+    },
+    {
+      "source": "project/.github/instructions/references/dialog-list-problem.md",
+      "destination": ".agents/references/dialog-list-problem.md",
+      "sha256": "5847dd84fbcabd7884894cb4bc39bbed6c8c3d1ec9ad18cb8617cd727964fa0a",
+      "final_sha256": "4b410d9ccbb13d925c2fe805dd4acb7986535827f2b8ff7648045820d2a35d96"
+    },
+    {
+      "source": "project/.github/instructions/references/error-reference.md",
+      "destination": ".agents/references/error-reference.md",
+      "sha256": "4ad3cbdb6cb99931cedc92343a2d444be4d8a46d3ee17c1aa21aad396bd5b967",
+      "final_sha256": "4ad3cbdb6cb99931cedc92343a2d444be4d8a46d3ee17c1aa21aad396bd5b967"
+    },
+    {
+      "source": "project/.github/instructions/references/excel-export-ooxml-recovery-problem.md",
+      "destination": ".agents/references/excel-export-ooxml-recovery-problem.md",
+      "sha256": "d3ac34f426feb25c3d9373bdfe6ddd76fa59d902d658e424c3df3a72445c6231",
+      "final_sha256": "d3ac34f426feb25c3d9373bdfe6ddd76fa59d902d658e424c3df3a72445c6231"
+    },
+    {
+      "source": "project/.github/instructions/references/fina-biza-jv-key-mismatch-problem.md",
+      "destination": ".agents/references/fina-biza-jv-key-mismatch-problem.md",
+      "sha256": "371012a924a39a7f399c5c1eb44f2c570feab3db2af3e36067adf1d9cb7d008f",
+      "final_sha256": "7da7b933a5594069bee14b6adef47a56301ee160fdce0c821cc6d72499fb72ea"
+    },
+    {
+      "source": "project/.github/instructions/references/fina-biza-running-number-sync-problem.md",
+      "destination": ".agents/references/fina-biza-running-number-sync-problem.md",
+      "sha256": "e27ea1ebaf71526c8fa244728ee9f3ae2ea5bebcb14b9846f265e4b5e74bbdba",
+      "final_sha256": "e1ef4b09559b167b23f7bba293c772f8c3b6f292cd94c0ff3232e1ee6041da99"
+    },
+    {
+      "source": "project/.github/instructions/references/fina-detail-group-row-dedupe-problem.md",
+      "destination": ".agents/references/fina-detail-group-row-dedupe-problem.md",
+      "sha256": "057e9199a1f0fc3fc52348ea2fbcbaacc2ebfcfd8255bfe95fc71964d151493a",
+      "final_sha256": "057e9199a1f0fc3fc52348ea2fbcbaacc2ebfcfd8255bfe95fc71964d151493a"
+    },
+    {
+      "source": "project/.github/instructions/references/fina-template-print-selection-problem.md",
+      "destination": ".agents/references/fina-template-print-selection-problem.md",
+      "sha256": "58fac910aaf03d1acf87a4c7d2b153a5059de07676e42af9c9dbd2ed00740521",
+      "final_sha256": "5757aa63370c294ef191cea3c3383e0bcde87b97102690fe27ed89ffdbc4df95"
+    },
+    {
+      "source": "project/.github/instructions/references/firebird-generator-rename-problem.md",
+      "destination": ".agents/references/firebird-generator-rename-problem.md",
+      "sha256": "66893394e461923e71c58843fb5f511c00b65dbadfc638b7b9e9e26c75f8762a",
+      "final_sha256": "9ef31c811136ef0512e3a95ed104efa10b3cbfd04e98dae688588d15cd7fc4e9"
+    },
+    {
+      "source": "project/.github/instructions/references/fml2fina-item-sync-problem.md",
+      "destination": ".agents/references/fml2fina-item-sync-problem.md",
+      "sha256": "f715d61ce96b39baebe004bb7de7b1764bf50237fe3e6b90589ff2b00ca68308",
+      "final_sha256": "ebd91cf472f90402c4afd7739b83a0c9cfe390dd71311e345e60acb6ea44b6c9"
+    },
+    {
+      "source": "project/.github/instructions/references/form-child-row-lookup-approval-problem.md",
+      "destination": ".agents/references/form-child-row-lookup-approval-problem.md",
+      "sha256": "275b4af4de72a570243bfe877b92f2df17f85536ca9852e980995449197f9906",
+      "final_sha256": "86e6f0f60bd789ac0e3dce8bcd7f335376ec59ccde6f25d8f117b27444c7a10f"
+    },
+    {
+      "source": "project/.github/instructions/references/form-model-value-sync-problem.md",
+      "destination": ".agents/references/form-model-value-sync-problem.md",
+      "sha256": "dbed1fcee609d0efaeed8a3e8b6001dbeac15348dacffbc8b95f8566bc3d915a",
+      "final_sha256": "c6c1883b1e7d13cd09b12f135c3d8c99b3d1cfda0b9edbd610f87cfb2b78bb14"
+    },
+    {
+      "source": "project/.github/instructions/references/form-rules.md",
+      "destination": ".agents/references/form-rules.md",
+      "sha256": "13546135e06454c29e267eb49f12e5da9acc6c366abf2c8200cd70bba49d9901",
+      "final_sha256": "a492d412176451889f80ac1ddd81258cf14cee43ad40aa1372476302b99d1e20"
+    },
+    {
+      "source": "project/.github/instructions/references/formly-list-inline-field-table-problem.md",
+      "destination": ".agents/references/formly-list-inline-field-table-problem.md",
+      "sha256": "3a6a825028350c736c0e3c625bd37cab8d97e8d2ef3d7f939767045ba6847365",
+      "final_sha256": "9f6e82d669a6890343f5d266687fb082a20caa12d98c64cc3127a2e0ce5a88cd"
+    },
+    {
+      "source": "project/.github/instructions/references/helper-rules.md",
+      "destination": ".agents/references/helper-rules.md",
+      "sha256": "4b8a36724551f73de41621e86d1abdf69f9e7007446b518d440dee9e449d61be",
+      "final_sha256": "4b8a36724551f73de41621e86d1abdf69f9e7007446b518d440dee9e449d61be"
+    },
+    {
+      "source": "project/.github/instructions/references/INDEX.md",
+      "destination": ".agents/references/INDEX.md",
+      "sha256": "b8f9a1c76301e8c68ffeac9f759b7fb43c9db2471cce74df3f1ddef260b8699e",
+      "final_sha256": "b8f9a1c76301e8c68ffeac9f759b7fb43c9db2471cce74df3f1ddef260b8699e"
+    },
+    {
+      "source": "project/.github/instructions/references/jvdet-incremental-save-problem.md",
+      "destination": ".agents/references/jvdet-incremental-save-problem.md",
+      "sha256": "e215f60fc524c326e3e04f1a981decdc4001262ea2781245320f6328fc7f8308",
+      "final_sha256": "db8632c981145defbda6df51f0fe84b5d65ef3615a77d8f12036fea581121838"
+    },
+    {
+      "source": "project/.github/instructions/references/list-action-button-wrap-problem.md",
+      "destination": ".agents/references/list-action-button-wrap-problem.md",
+      "sha256": "a8b00d17b3aa6a642fc01b704d16d538716efbac588f4b4b99d8762c19b9a448",
+      "final_sha256": "9341c77e05b20758806828cfe3e3c55f646d85e45a70c8068853c98d2ddb0e24"
+    },
+    {
+      "source": "project/.github/instructions/references/list-row-action-dom-state-problem.md",
+      "destination": ".agents/references/list-row-action-dom-state-problem.md",
+      "sha256": "66304549a32dd4d05fc906c074fcc70ec67cbafd0de2da3764c282024697b882",
+      "final_sha256": "6fc6bd3b60c80e20beda5fb96cabf195381a415f5a3c2f934706e3f291c97fa5"
+    },
+    {
+      "source": "project/.github/instructions/references/list-rules.md",
+      "destination": ".agents/references/list-rules.md",
+      "sha256": "b2cd3fad9ff84bb22f0d3c13097c6bf88c65cb200e7e526f96e3ba6443b92c72",
+      "final_sha256": "b2cd3fad9ff84bb22f0d3c13097c6bf88c65cb200e7e526f96e3ba6443b92c72"
+    },
+    {
+      "source": "project/.github/instructions/references/lookup-code-id-split-problem.md",
+      "destination": ".agents/references/lookup-code-id-split-problem.md",
+      "sha256": "9b8f7c42962ecef95816ab583a414124423f936cd08f17ee6bc1e10faea54b2d",
+      "final_sha256": "f59ad3d6bd02f380f5405434a2442703139d311b493cc6b375f474d9d1ef7cc3"
+    },
+    {
+      "source": "project/.github/instructions/references/mobile-layout-rules.md",
+      "destination": ".agents/references/mobile-layout-rules.md",
+      "sha256": "483e51e89ad8b5ae127d0fd57c7caf3a1a9b7a181cdd3b48f9df90f57a064ed9",
+      "final_sha256": "c68ee71956621ecafcbbf777735ca4931790392a2e8afc3f38e929e6f43884b3"
+    },
+    {
+      "source": "project/.github/instructions/references/pattern-index.md",
+      "destination": ".agents/references/pattern-index.md",
+      "sha256": "b6d7801660cf70b67ea3fcd9dea44e8b80855d7a57e31b0e80e544b47db6114e",
+      "final_sha256": "6d2b57ffbb04812ac2388afc8cc68fd65451651cd797ed7ff0c2f054ade87803"
+    },
+    {
+      "source": "project/.github/instructions/references/pk-field-config.md",
+      "destination": ".agents/references/pk-field-config.md",
+      "sha256": "90ab36469f86024ed790d94693bb7987be2e3911a0ddcfdfa320f99b41ce3dc1",
+      "final_sha256": "90ab36469f86024ed790d94693bb7987be2e3911a0ddcfdfa320f99b41ce3dc1"
+    },
+    {
+      "source": "project/.github/instructions/references/proton-lifecycle.md",
+      "destination": ".agents/references/proton-lifecycle.md",
+      "sha256": "d72cbecd3201ea22e3b5755c3801347df08e569c1ddf95e1956ef9ef1f17d13f",
+      "final_sha256": "d72cbecd3201ea22e3b5755c3801347df08e569c1ddf95e1956ef9ef1f17d13f"
+    },
+    {
+      "source": "project/.github/instructions/references/quality-gates.md",
+      "destination": ".agents/references/quality-gates.md",
+      "sha256": "0382bdff02e22c3d6828424fc7acbe129c2fb146f21def589e9806d6662bd8f1",
+      "final_sha256": "0382bdff02e22c3d6828424fc7acbe129c2fb146f21def589e9806d6662bd8f1"
+    },
+    {
+      "source": "project/.github/instructions/references/refactor-checklist.md",
+      "destination": ".agents/references/refactor-checklist.md",
+      "sha256": "48009ca4603e54aced88ed123d74139161ca639b32516770bfbbc4b994b4220a",
+      "final_sha256": "48009ca4603e54aced88ed123d74139161ca639b32516770bfbbc4b994b4220a"
+    },
+    {
+      "source": "project/.github/instructions/references/rename-used-column-rules.md",
+      "destination": ".agents/references/rename-used-column-rules.md",
+      "sha256": "7e394b670f01ebf71e3f0f55637435dfd6e096eefe9598f48b986f3987bd0847",
+      "final_sha256": "6513eb4a290dba1e285e722b68c77fe29fe91b889e5827933e0e45f671701a6f"
+    },
+    {
+      "source": "project/.github/instructions/references/repeat-fieldgroup-manipulation-problem.md",
+      "destination": ".agents/references/repeat-fieldgroup-manipulation-problem.md",
+      "sha256": "3e6b1c5c55c0109e4e79f64b79bbe021a4a3f472ea918aef3ba8a2168c409aea",
+      "final_sha256": "107cb884a4bb298ef4d2fe2981466d7dfd4499a1cb972940cad03d994dc3e8a6"
+    },
+    {
+      "source": "project/.github/instructions/references/table-custom-column-flexible-rules.md",
+      "destination": ".agents/references/table-custom-column-flexible-rules.md",
+      "sha256": "f6426fe2515495ef3b6bb57684272101cc59380d948ffe9570fc6b1823397d2b",
+      "final_sha256": "1020b0245cea0243db94a29b86b01c5259f531a39b59d3936cf4b97bde701380"
+    },
+    {
+      "source": "project/.github/instructions/references/visual-design-theming-index.md",
+      "destination": ".agents/references/visual-design-theming-index.md",
+      "sha256": "f7c4499c5f88d388c270ba0d7378da30ec19923b4327dee13df09cbebc2a9e74",
+      "final_sha256": "4313d21af61a8efa825e86b3d43ac88926fdefffe7fffbaa7eda0b35bde0d27d"
+    },
+    {
+      "source": "project/.github/instructions/references/workshop-sales-confirmed-bo-load-problem.md",
+      "destination": ".agents/references/workshop-sales-confirmed-bo-load-problem.md",
+      "sha256": "d00f7ce6fe21c800fd37de43c8b11ed2cd745fec0b5497adfede28e5b396f0aa",
+      "final_sha256": "43e59e7e05aec26f1c11f40255b3a3fdd7e607e5f2461d79bb6bd51cbe50f2e1"
+    },
+    {
+      "source": "project/.github/instructions/biz-a.rules.instructions.md",
+      "destination": ".agents/rules/biz-a.rules.instructions.md",
+      "sha256": "a2699eed98c7fd80585694d6a9fb979e24b6bc0dc72392fcb81ce95269d523d6",
+      "final_sha256": "8b5a3d75f8fbb780610e44b6211b6e24aba31ae94e7343bedf87162682018de9"
+    },
+    {
+      "source": "project/.github/doc/APL/No Voucher Setiap Akun.xlsx",
+      "destination": ".agents/docs/APL/No Voucher Setiap Akun.xlsx",
+      "sha256": "650becc8f988385302c9a5c6b3ef218dc272fcd222f4ff5410e9ae6aafc153d0",
+      "final_sha256": "650becc8f988385302c9a5c6b3ef218dc272fcd222f4ff5410e9ae6aafc153d0"
+    },
+    {
+      "source": "project/.github/doc/BERCA/workshopSales.png",
+      "destination": ".agents/docs/BERCA/workshopSales.png",
+      "sha256": "439e3872a35b501ac0670d9674431408514ff4c8f6ba6d94f3170c0ef07d7b98",
+      "final_sha256": "439e3872a35b501ac0670d9674431408514ff4c8f6ba6d94f3170c0ef07d7b98"
+    },
+    {
+      "source": "project/.github/doc/biz-a-bpm-spec-v1.0.md",
+      "destination": ".agents/docs/biz-a-bpm-spec-v1.0.md",
+      "sha256": "a58737fe5ea4ff412c11d90e82b1d9129e12940daadbd54787db560897722dfd",
+      "final_sha256": "a58737fe5ea4ff412c11d90e82b1d9129e12940daadbd54787db560897722dfd"
+    },
+    {
+      "source": "project/.github/doc/biz-a-control-center-spec-v1.0.md",
+      "destination": ".agents/docs/biz-a-control-center-spec-v1.0.md",
+      "sha256": "34291e1333a3d8769c27ffc975720b30a36d8253e8cf58abd75b370022e13993",
+      "final_sha256": "34291e1333a3d8769c27ffc975720b30a36d8253e8cf58abd75b370022e13993"
+    },
+    {
+      "source": "project/.github/doc/dok-6-biz-a-theming.md",
+      "destination": ".agents/docs/dok-6-biz-a-theming.md",
+      "sha256": "19f4f8cc1b45819df7b6264ed60ebd2a106e91594de284def437a6425ceef90f",
+      "final_sha256": "19f4f8cc1b45819df7b6264ed60ebd2a106e91594de284def437a6425ceef90f"
+    },
+    {
+      "source": "project/.github/doc/endo medika/priviledges.md",
+      "destination": ".agents/docs/endo medika/priviledges.md",
+      "sha256": "4582d3dfdd7a534cf4bd0310b8ee69df98057a6efd44678250cf7c23d3d27cf2",
+      "final_sha256": "4582d3dfdd7a534cf4bd0310b8ee69df98057a6efd44678250cf7c23d3d27cf2"
+    },
+    {
+      "source": "project/.github/doc/endo medika/siform periode 1-4-2025 - 17-14-2026.pdf",
+      "destination": ".agents/docs/endo medika/siform periode 1-4-2025 - 17-14-2026.pdf",
+      "sha256": "a58f86dbbd5e4d8f6bc8ccca905e77f91508555909decd9e94fddad26b15ac7c",
+      "final_sha256": "a58f86dbbd5e4d8f6bc8ccca905e77f91508555909decd9e94fddad26b15ac7c"
+    },
+    {
+      "source": "project/.github/doc/Manual Book Biz-A.pdf",
+      "destination": ".agents/docs/Manual Book Biz-A.pdf",
+      "sha256": "fdafd0af486dedc4a1ae8c2cc6ff964c10f9dde62960c78a3876f61b87ff8c6d",
+      "final_sha256": "fdafd0af486dedc4a1ae8c2cc6ff964c10f9dde62960c78a3876f61b87ff8c6d"
+    },
+    {
+      "source": "project/.github/doc/Manual FINA API.pdf",
+      "destination": ".agents/docs/Manual FINA API.pdf",
+      "sha256": "651b9fb8b9d62429edb49fafff410fae3388bf3efe66c479f3349bb54a8e8187",
+      "final_sha256": "651b9fb8b9d62429edb49fafff410fae3388bf3efe66c479f3349bb54a8e8187"
+    },
+    {
+      "source": "project/.github/doc/missie idea/UI Mobile Fitur Quo - PO Client.md",
+      "destination": ".agents/docs/missie idea/UI Mobile Fitur Quo - PO Client.md",
+      "sha256": "820b11d22d3f0e915ba8236d38cdc9011d604def140cf8832f8f71270ae6b88f",
+      "final_sha256": "820b11d22d3f0e915ba8236d38cdc9011d604def140cf8832f8f71270ae6b88f"
+    },
+    {
+      "source": "project/.github/doc/proton/5805-job-order.md",
+      "destination": ".agents/docs/proton/5805-job-order.md",
+      "sha256": "246f002df75313d5fa91ee05710988a9da81626ef2ae8c4c74554409685f2758",
+      "final_sha256": "246f002df75313d5fa91ee05710988a9da81626ef2ae8c4c74554409685f2758"
+    },
+    {
+      "source": "project/.github/doc/proton/6104-6111-job-order-fixes.md",
+      "destination": ".agents/docs/proton/6104-6111-job-order-fixes.md",
+      "sha256": "3b1131ddca7b6c2fcc692853e2fd4edb94f2e3452b488e1640143f4e44034016",
+      "final_sha256": "3b1131ddca7b6c2fcc692853e2fd4edb94f2e3452b488e1640143f4e44034016"
+    },
+    {
+      "source": "project/.github/doc/proton/6111-qty-editor-inclusive-subtotal.md",
+      "destination": ".agents/docs/proton/6111-qty-editor-inclusive-subtotal.md",
+      "sha256": "2c1f62c729fc54cb11b55b039463b1287712d90741ef4b6f891e9c116312e1be",
+      "final_sha256": "2c1f62c729fc54cb11b55b039463b1287712d90741ef4b6f891e9c116312e1be"
+    },
+    {
+      "source": "project/.github/doc/proton/Requirement PERMOHONAN SPAREPART.pdf",
+      "destination": ".agents/docs/proton/Requirement PERMOHONAN SPAREPART.pdf",
+      "sha256": "7d3b5b5e8625a325d86affe0e0fb7ecf750ee22f8ce420fa1c203b9fa888e65e",
+      "final_sha256": "7d3b5b5e8625a325d86affe0e0fb7ecf750ee22f8ce420fa1c203b9fa888e65e"
+    },
+    {
+      "source": "project/.github/doc/proton/Requirement SO.md",
+      "destination": ".agents/docs/proton/Requirement SO.md",
+      "sha256": "3c37989d4e92f7a62290dd647e9a8a1b35b060db741054e2c94af9b784f8d9fd",
+      "final_sha256": "3c37989d4e92f7a62290dd647e9a8a1b35b060db741054e2c94af9b784f8d9fd"
+    },
+    {
+      "source": "project/.github/doc/spiritia/Anvar_USD_per_IE.xlsx",
+      "destination": ".agents/docs/spiritia/Anvar_USD_per_IE.xlsx",
+      "sha256": "9d2e2df74ffe31bc7a7973fb5521d79b4c193d3e634eb7909af12aa3f602204b",
+      "final_sha256": "9d2e2df74ffe31bc7a7973fb5521d79b4c193d3e634eb7909af12aa3f602204b"
+    },
+    {
+      "source": "project/.github/doc/Watcher and Callback.pdf",
+      "destination": ".agents/docs/Watcher and Callback.pdf",
+      "sha256": "beebe5068a4e68918c503365ea22e653bd769368629aa0c1445105434dc2ca48",
+      "final_sha256": "beebe5068a4e68918c503365ea22e653bd769368629aa0c1445105434dc2ca48"
+    },
+    {
+      "source": "project/.github/agents/biz-a-developer.agent.md",
+      "destination": ".agents/agents/biz-a-developer.agent.md",
+      "sha256": "31a237ea9305754b420042fe2f1303ac2191363377cfc77933b9f4c9c7725919",
+      "final_sha256": "0c3322dea39be6c0f6b8c0bf0a0686f6788205123c7d38f8eb2ee9ce943799a3"
+    },
+    {
+      "source": "project/.github/agents/biz-a-rules-creator.agent.md",
+      "destination": ".agents/agents/biz-a-rules-creator.agent.md",
+      "sha256": "21fdee810ae60ecb47a1d06fb363a747fbdcdfb4d38dae65d4ae4fb4218bdbb8",
+      "final_sha256": "965da4af05ef4f34fd38eaecc46fe2bc94a3294ed540ef19af44a8d9ec7dd14b"
+    },
+    {
+      "source": "project/.github/agents/programmer reviewer.agent.md",
+      "destination": ".agents/agents/programmer reviewer.agent.md",
+      "sha256": "8f0ffc40ed86858e7d4f061dad5aaf547631c2903e384eaf2eb588f0e15b1a51",
+      "final_sha256": "8f0ffc40ed86858e7d4f061dad5aaf547631c2903e384eaf2eb588f0e15b1a51"
+    },
+    {
+      "source": "project/.claude/commands/biz-a-create.md",
+      "destination": ".agents/commands/biz-a-create.md",
+      "sha256": "2233d8c8821435ec94df753e4bad2d751d99eb184c39a99d3fed790b413a1412",
+      "final_sha256": "b0d04b6e6f713be8948e959d8f6115ed81b2ddbfddcd8a24e9980c73aa6e2999"
+    },
+    {
+      "source": "project/.claude/commands/biz-a-debug.md",
+      "destination": ".agents/commands/biz-a-debug.md",
+      "sha256": "6f20eed9adb18bf0c3dffb641091c15209f1a8c4a371ae1dae47d8f7e4cbf552",
+      "final_sha256": "0488d3958edac44971bd891866b0add590a4313b1811a86e56a5b6fa7f515b8e"
+    },
+    {
+      "source": "project/.claude/commands/biz-a-refactor.md",
+      "destination": ".agents/commands/biz-a-refactor.md",
+      "sha256": "3d4408ff1ce6170772a2564cafe77a237a88114cf20b26cc56b262802fd1441e",
+      "final_sha256": "b661af564382c66fe81630d248eca72a35eac844e95843db74cd607a5c86cf62"
+    },
+    {
+      "source": "project/.claude/doc/patterns.md",
+      "destination": ".agents/references/patterns.md",
+      "sha256": "6914a7575702caf8edfa6d738bc6a4c6b788c5516587c6a5f1e3fc2a074a2fe7",
+      "final_sha256": "6914a7575702caf8edfa6d738bc6a4c6b788c5516587c6a5f1e3fc2a074a2fe7"
+    },
+    {
+      "source": "project/.claude/doc/firlan-style/creation-checklist.md",
+      "destination": ".agents/archive/claude-references/creation-checklist.md",
+      "sha256": "39fe24b52485ee66cd9f135ff59d253bb5532ec08b6bbaf516a26c5992d29a05",
+      "final_sha256": "39fe24b52485ee66cd9f135ff59d253bb5532ec08b6bbaf516a26c5992d29a05"
+    },
+    {
+      "source": "project/.claude/doc/firlan-style/error-reference.md",
+      "destination": ".agents/archive/claude-references/error-reference.md",
+      "sha256": "7beb9ea2d01b9e5f067ae959342e33f7b7678de62ddf47d9af998b8d84eb9ed2",
+      "final_sha256": "7beb9ea2d01b9e5f067ae959342e33f7b7678de62ddf47d9af998b8d84eb9ed2"
+    },
+    {
+      "source": "project/.claude/doc/firlan-style/form-rules.md",
+      "destination": ".agents/archive/claude-references/form-rules.md",
+      "sha256": "f84a838ac95aa033610925c7b01622a530b4ddb513f2f6bdd4e5f19ee7e0ec4d",
+      "final_sha256": "f84a838ac95aa033610925c7b01622a530b4ddb513f2f6bdd4e5f19ee7e0ec4d"
+    },
+    {
+      "source": "project/.claude/doc/firlan-style/helper-rules.md",
+      "destination": ".agents/archive/claude-references/helper-rules.md",
+      "sha256": "277575d058ea8797ebdad530f3027fbe8c516848b87e3a131fb00c30ee1145c7",
+      "final_sha256": "277575d058ea8797ebdad530f3027fbe8c516848b87e3a131fb00c30ee1145c7"
+    },
+    {
+      "source": "project/.claude/doc/firlan-style/list-rules.md",
+      "destination": ".agents/archive/claude-references/list-rules.md",
+      "sha256": "6b3c44ba9cc6430f4893ac96120d4133c0854fec95f9c59762a75355c973b692",
+      "final_sha256": "6b3c44ba9cc6430f4893ac96120d4133c0854fec95f9c59762a75355c973b692"
+    },
+    {
+      "source": "project/.claude/doc/firlan-style/pattern-index.md",
+      "destination": ".agents/archive/claude-references/pattern-index.md",
+      "sha256": "eff575069a6830250c455711079879460bc48a2169536d60323069fbf4bd2874",
+      "final_sha256": "eff575069a6830250c455711079879460bc48a2169536d60323069fbf4bd2874"
+    },
+    {
+      "source": "project/.claude/doc/firlan-style/quality-gates.md",
+      "destination": ".agents/archive/claude-references/quality-gates.md",
+      "sha256": "66ed91053bf2d47561335794b835709e67c99fa608e17aef4f704adfed5ac611",
+      "final_sha256": "66ed91053bf2d47561335794b835709e67c99fa608e17aef4f704adfed5ac611"
+    },
+    {
+      "source": "project/.claude/doc/firlan-style/refactor-checklist.md",
+      "destination": ".agents/archive/claude-references/refactor-checklist.md",
+      "sha256": "1fe430c3dfadf75b0d987a9ca4f644910c99ed74587a4344985a93f1ff1ac842",
+      "final_sha256": "1fe430c3dfadf75b0d987a9ca4f644910c99ed74587a4344985a93f1ff1ac842"
+    },
+    {
+      "source": "project/.claude/doc/firlan-style/tdd-rules.md",
+      "destination": ".agents/references/tdd-rules.md",
+      "sha256": "70f47cec015e6f1462d75b45b7ad788c9ff614d479375881c88147d6a5a76f96",
+      "final_sha256": "70f47cec015e6f1462d75b45b7ad788c9ff614d479375881c88147d6a5a76f96"
+    },
+    {
+      "source": "user/.codex/AGENTS.md",
+      "destination": ".agents/instructions/context7.md",
+      "sha256": "9fc34f2cc057e3175d8b49c622d4732745102f0b9ffdefe2ca739d994396f37b",
+      "final_sha256": "9fc34f2cc057e3175d8b49c622d4732745102f0b9ffdefe2ca739d994396f37b"
+    },
+    {
+      "source": "user/.codex/rules/default.rules",
+      "destination": ".agents/rules/exec/default.rules",
+      "sha256": "f1a66b444c0ec2ffaa50f7244d8e517d4c49d580b9b3913f90d7cb39b99ba8a5",
+      "final_sha256": "f1a66b444c0ec2ffaa50f7244d8e517d4c49d580b9b3913f90d7cb39b99ba8a5"
+    },
+    {
+      "source": "project/.codex/plans/2026-08-13-task-4462-vendis-so-running-number.md",
+      "destination": ".agents/plans/2026-08-13-task-4462-vendis-so-running-number.md",
+      "sha256": "7325cf314e694e363ea29696fb05fc5c9cbaa7ca93b9cf38996fbdd87aabab15",
+      "final_sha256": "7325cf314e694e363ea29696fb05fc5c9cbaa7ca93b9cf38996fbdd87aabab15"
+    },
+    {
+      "source": "project/.codex/plans/2026-09-10-so-running-number-callback-queue.md",
+      "destination": ".agents/plans/2026-09-10-so-running-number-callback-queue.md",
+      "sha256": "627b90638682b3acf0b76e2a6788f91b63e807f84ea117f97479ba3f03dcfe44",
+      "final_sha256": "627b90638682b3acf0b76e2a6788f91b63e807f84ea117f97479ba3f03dcfe44"
+    },
+    {
+      "source": "project/.codex/plans/2026-09-15-task-5518-quotation-approval-po-client.md",
+      "destination": ".agents/plans/2026-09-15-task-5518-quotation-approval-po-client.md",
+      "sha256": "d1c11a2913df983c8cab62ecd05c67ad507d3ce059ad219e266de11021d46f09",
+      "final_sha256": "d1c11a2913df983c8cab62ecd05c67ad507d3ce059ad219e266de11021d46f09"
+    },
+    {
+      "source": "project/.codex/plans/2026-09-17-task-5570-atomic-so-approval.md",
+      "destination": ".agents/plans/2026-09-17-task-5570-atomic-so-approval.md",
+      "sha256": "3428df9e7f8456cea36b166fa46a7fe2e2d92370a7895e48c141ae7f02171385",
+      "final_sha256": "3428df9e7f8456cea36b166fa46a7fe2e2d92370a7895e48c141ae7f02171385"
+    }
+  ],
+  "duplicates": [
+    {
+      "source": "project/.claude/doc/firlan-style/debug-reference.md",
+      "canonical": ".agents/references/debug-reference.md"
+    },
+    {
+      "source": "project/.claude/doc/firlan-style/proton-lifecycle.md",
+      "canonical": ".agents/references/proton-lifecycle.md"
+    },
+    {
+      "source": "project/.github/skills/biz-a-create/SKILL.md",
+      "canonical": ".agents/skills/biz-a-create/SKILL.md",
+      "merged": "argument-hint moved to body for Codex compatibility"
+    },
+    {
+      "source": "project/.github/skills/biz-a-debug/SKILL.md",
+      "canonical": ".agents/skills/biz-a-debug/SKILL.md",
+      "merged": "argument-hint moved to body for Codex compatibility"
+    },
+    {
+      "source": "project/.github/skills/biz-a-refactor/SKILL.md",
+      "canonical": ".agents/skills/biz-a-refactor/SKILL.md",
+      "merged": "argument-hint moved to body for Codex compatibility"
+    },
+    {
+      "source": "project/.github/skills/biz-a-simplify/SKILL.md",
+      "canonical": ".agents/skills/biz-a-simplify/SKILL.md",
+      "merged": "argument-hint moved to body for Codex compatibility"
+    }
+  ],
+  "native_entrypoints": [
+    "AGENTS.md",
+    "CLAUDE.md",
+    ".github/copilot-instructions.md",
+    ".github/instructions/biz-a.rules.instructions.md",
+    ".github/agents/*.agent.md",
+    ".claude/commands/*.md",
+    ".codex/config.toml",
+    ".codex/rules/default.rules"
+  ],
+  "status": "migrated",
+  "removed_source_files": 115,
+  "migrated_mcp_servers": [
+    "serena",
+    "context7"
+  ]
+}

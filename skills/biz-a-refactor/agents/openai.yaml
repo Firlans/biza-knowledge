@@ -1,0 +1,4 @@
+interface:
+  display_name: "Biz-A Refactor"
+  short_description: "Refactor module Biz-A ala Firlan"
+  default_prompt: "Use $biz-a-refactor to refactor Biz-A code toward Firlan style."

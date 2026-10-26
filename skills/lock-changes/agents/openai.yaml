@@ -1,0 +1,4 @@
+interface:
+  display_name: "Lock Changes"
+  short_description: "Deprecated Biz-A lock flow"
+  default_prompt: "Do not use $lock-changes for Biz-A work. Use the relevant Biz-A skill instead."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Biz-A Reviewer"
+  short_description: "Document resolved Biz-A problems"
+  default_prompt: "Use $biz-a-reviewer to review the completed Biz-A chat, extract the reusable problem, and document it in project references."

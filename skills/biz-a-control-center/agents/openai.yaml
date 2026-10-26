@@ -1,0 +1,4 @@
+interface:
+  display_name: "Biz-A Control Center"
+  short_description: "Config, script, dan workflow approval Biz-A"
+  default_prompt: "Gunakan $biz-a-control-center untuk memeriksa konfigurasi, alur script, dan workflow approval Biz-A."

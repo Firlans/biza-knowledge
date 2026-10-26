@@ -1,0 +1,10 @@
+# Contoh portabel. Konfigurasi koneksi asli disimpan di private/codex.toml.
+# Jangan salin API key ke file yang dilacak Git.
+
+[mcp_servers.serena]
+command = "serena"
+args = ["start-mcp-server", "--context=codex", "--project-from-cwd"]
+
+[mcp_servers.context7]
+type = "http"
+url = "https://mcp.context7.com/mcp"
