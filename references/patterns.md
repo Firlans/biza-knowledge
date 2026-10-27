@@ -406,6 +406,12 @@ filter: [
 
 Untuk query kompleks yang tidak bisa dilakukan via `queryData`, gunakan `executeBlock`:
 
+`executeBlock` hanya untuk SELECT/read-only. Jangan gunakan untuk INSERT, UPDATE,
+DELETE, DDL, atau prosedur/function yang mengubah data/generator. Penambahan dan
+penyimpanan data Biz-A memakai `sendModel`; data FINA memakai `json2fina`.
+Alokasi ID Biz-A memakai `genId` bila diperlukan; ID FINA dikelola dataset FINA.
+Lihat `sendmodel-write-executeblock-select-rules.md`.
+
 ### setSql Helper
 
 ```js
@@ -933,6 +939,10 @@ saveLog: function (model) {
 ## 14. Save / CRUD Pattern
 
 ### Save ke Biz-A Database (sendModel)
+
+Gunakan `sendModel` untuk penambahan/penyimpanan record tabel di database Biz-A.
+Untuk data FINA, termasuk master lookup, gunakan `json2fina` (section berikutnya).
+Jangan mengganti jalur tersebut dengan SQL mutasi melalui `executeBlock`.
 
 ```js
 saveData: function (model) {

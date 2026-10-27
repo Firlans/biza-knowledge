@@ -6,6 +6,14 @@ applyTo: "**/*.js"
 
 # Biz-A Rules
 
+## Data writes and executeBlock
+
+- Untuk penambahan/penyimpanan data ke database Biz-A, gunakan `dataService.sendModel(...)` dan validasi `response.error` sebelum jalur sukses.
+- Untuk penambahan/penyimpanan data ke FINA (termasuk master lookup), gunakan `dataService.json2fina(...)` dan validasi `response.error` serta `response.result?.[0]?.error` sebelum jalur sukses. Jangan gunakan `sendModel` untuk menulis ke FINA; ORM Biz-A mengasumsikan kolom `ID`, sedangkan tabel FINA dapat memakai primary key berbeda seperti `EXTENDEDDETID`.
+- `dataService.executeBlock(...)` hanya digunakan untuk SELECT/read-only. Jangan gunakan untuk INSERT, UPDATE, DELETE, DDL, atau prosedur/function yang mengubah data maupun generator. Gunakan `dataService.genId(...)` untuk alokasi ID.
+- Sebelum mengubah alur tambah/simpan record atau pemakaian `executeBlock`, baca `.agents/references/sendmodel-write-executeblock-select-rules.md`.
+- Pertahankan integrasi FINA yang memang sudah memakai `fml2fina`; jangan mengganti jalur penulisan resmi FINA dengan SQL mutasi melalui `executeBlock`.
+
 ## Required reference loading
 
 - Sebelum mengubah kode Biz-A, baca `.agents/references/INDEX.md`

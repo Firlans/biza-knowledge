@@ -7,7 +7,7 @@ Ikuti **Section 2, 5, 6, 7, 8, 9, 11** di `patterns.md` untuk naming dan separat
 | Jenis logic | Lokasi |
 |---|---|
 | Query logic | Query libraries (`lib_qry`) |
-| Raw SQL kompleks | `lib_queryRaw` dengan pola `setSql` + `executeBlock` (Section 6) |
+| SELECT kompleks/read-only | `lib_queryRaw` dengan pola `setSql` + `executeBlock` (Section 6); penulisan data Biz-A memakai `sendModel`, data FINA memakai `json2fina` |
 | Utility umum | `lib_utils` — `openDialog`, `findLuFina`, `findField`, `toNumber`, `numberToRomawi`, `convertToWord` (Section 7) |
 | Authorization | `lib_authorization` — `getGroupNames`, `setAction`, `setActionUsingKey`, `setControlDataList` (Section 8) |
 | HTML template print/report | `lib_template` (Section 9) |
