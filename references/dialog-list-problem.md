@@ -43,3 +43,23 @@ Recommended flow:
 ## Related References
 
 - `.agents/references/form-rules.md`
+
+## Dialog remains narrow after a layout helper was added
+
+For a wide table dialog, set `width` and `maxWidth` on the actual config passed
+to `dialog.open`, before opening it. See `BERCA/poMaintainForm.js`,
+`itemHistoryClicked`, for the Item History fix: a local `MatDialogConfig`
+with both properties set to `95vw` replaces the half-viewport helper.
+
+Check library loading at each form/list entry point. A helper declared only in
+another library's `useLibrary` is not proof that it is available in the target
+entry point. In APL task 6347, `listPR` and `PPPform` did not directly declare
+`lib_ui`, while the first fix relied on `applyPurchaseDialogLayout` to set both
+dialog size and grid styles. The corrected entry points declare `lib_ui`, the
+builders set the dialog dimensions directly, and the grid helper is called via
+`this.f()`.
+
+Regression coverage must load libraries from the entry point's own declaration
+and inspect the config received by `dialog.open`. A fixture that manually
+injects the layout helper cannot detect a missing runtime dependency. Keep
+fixture/browser geometry results separate from target runtime verification.

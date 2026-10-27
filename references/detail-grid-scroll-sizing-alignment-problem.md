@@ -49,6 +49,12 @@ Use column widths based on content type:
 - Use `display: 'flex'` plus `justifyContent: 'center'` to center the rendered column content.
 - Use `textAlign` only when the requirement is specifically text alignment and the renderer honors it.
 - Keep `white-space: nowrap` local to the scrollable grid when wrapping is not allowed.
+- To fill a wide dialog without a blank strip after the final column, set table
+  and row widths to `100%` and let a description/remarks column grow, for example
+  `flex: '1 0 24rem'`. Keep its minimum width and the other columns' fixed bases
+  so narrow screens still scroll. Do not add unused width to the sum of visible
+  column widths. Verify the final cell reaches the frame edge on a wide viewport,
+  not just that it becomes visible after scrolling.
 - Install injected layout CSS during `beforeLoadData` and remove it during `onDestroy`.
 
 ## What To Avoid
