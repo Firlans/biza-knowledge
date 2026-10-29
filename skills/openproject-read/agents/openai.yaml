@@ -1,0 +1,3 @@
+interface:
+  display_name: "OpenProject Reader"
+  short_description: "Baca task, komentar, dan lampiran OP via API lokal"
