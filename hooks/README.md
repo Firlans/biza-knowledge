@@ -11,6 +11,22 @@ Jalankan sinkronisasi ulang jika lokasi proyek berubah.
   `exec_command`) dan edit file (`apply_patch`, alias `Edit`/`Write`).
 - Isi `.agents/instructions/project.md`, `.agents/rules/**/*.md`, dan
   `.agents/rules/**/*.rules` dimasukkan sebagai `additionalContext`.
+- `.agents/rules/pattern-recognition.rules.instructions.md` terdaftar eksplisit
+  sebagai file wajib bersama instruksi proyek dan rules Biz-A. Isi lengkapnya
+  dimuat sekali pada setiap event, dibaca ulang dari disk, dan diprioritaskan
+  sebelum rules Biz-A. File hilang/kosong menghasilkan keputusan `block`.
+- Rules pattern mengarahkan pembacaan
+  `.agents/references/biz-a-design-pattern-recognition.md` sebelum perubahan file;
+  isi referensi tersebut tetap dibaca oleh agent sesuai instruksi rules.
+- `.agents/rules/javascript-readable.rules.instructions.md` juga terdaftar
+  sebagai file wajib. Rules format JavaScript dimuat lengkap tepat sekali,
+  setelah pattern recognition dan sebelum rules Biz-A, pada kedua event.
+  File hilang atau kosong menghasilkan keputusan `block`.
+- Kedua handler memakai `additionalContextLimit: 8000`. Batas 5.000 sebelumnya
+  terlampaui setelah penambahan rules JavaScript. Pengaturan ini menaikkan
+  ambang preview terpotong sesuai
+  [dokumentasi resmi OpenAI Hooks](https://learn.chatgpt.com/docs/hooks#large-hook-output);
+  jika rules bertambah hingga melewati batas baru, evaluasi kembali ukurannya.
 - Referensi rinci dipilih melalui `.agents/references/INDEX.md` sesuai task;
   hook tidak memuat semua referensi sekaligus.
 - Jika rules wajib hilang, kosong, atau gagal dibaca, hook mengembalikan

@@ -4,7 +4,7 @@ Semua materi AI yang dipelihara pengguna berada di folder ini.
 
 | Folder | Isi |
 |---|---|
-| `skills/` | 11 skill pengguna, termasuk Biz-A, Context7, PDF, dan penanda lock-changes yang deprecated |
+| `skills/` | Skill pengguna, termasuk Biz-A, OpenProject Reader, Context7, PDF, dan penanda lock-changes yang deprecated |
 | `rules/` | Rules Biz-A dan aturan eksekusi Codex di `exec/` |
 | `references/` | Referensi aktif, indeks trigger, patterns, dan aturan TDD |
 | `docs/` | Manual, spesifikasi, dan dokumen pendukung yang sebelumnya di `.github/doc/` |
