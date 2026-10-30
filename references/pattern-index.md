@@ -17,12 +17,25 @@ Sumber kebenaran utama untuk semua module Biz-A Firlan style.
 
 > **Dilarang**: `APL` dan `BERCA` sebagai referensi — kecuali user secara eksplisit memintanya dan semua referensi di atas masih tidak cukup.
 
+## Referensi Buku Learning Patterns
+
+Sumber PDF lokal: `.agents/docs/learning-patterns-final-v1.1.pdf`. Gunakan
+referensi berikut sesuai signal task; adaptasi mengikuti rules Biz-A.
+
+| Reference | Kapan dipakai |
+|---|---|
+| [learning-patterns-reference.md](learning-patterns-reference.md) | Identitas, atribusi, peta buku, dan nomor halaman PDF |
+| [learning-patterns-javascript-patterns.md](learning-patterns-javascript-patterns.md) | Factory, Module, Singleton, Observer, Proxy, Prototype, Mixin, Mediator/Middleware, Flyweight, dan Command |
+| [learning-patterns-component-patterns.md](learning-patterns-component-patterns.md) | Provider, Container/Presentational, Render Props, Hooks, HOC, dan Compound Component |
+| [learning-patterns-rendering-performance.md](learning-patterns-rendering-performance.md) | Rendering, hydration, islands, loading, import/splitting, PRPL, tree shaking, resource hints, dan virtualization |
+
 ## Problem References
 
 Load these before broad repo search when the task signal matches:
 
 | Reference | Kapan dipakai |
 |---|---|
+| `biz-a-design-pattern-recognition.md` | Mengenali atau memilih functional/plain-object design patterns: Factory, Builder, Module, Singleton, Adapter, Strategy, Decorator, Observer, Middleware, dan Async Queue; cocokkan bukti kode dan hindari abstraksi yang tidak perlu |
 | `excel-export-ooxml-recovery-problem.md` | Excel downloads request recovery, SheetJS/ExcelJS header styling loses required `defaultRowHeight`, or library round trips pass while native Excel rejects the file |
 | `mobile-layout-rules.md` | Mobile layouts from prototypes, stacked header/filter fields, paired dates, master hub icon/description cards, blank mobile list cards, omitted native columns/actions, typed row IDs, and UI lifecycle cleanup |
 | `dialog-list-problem.md` | Opening record lists, history rows, selectable grids, or previously created records from a form |

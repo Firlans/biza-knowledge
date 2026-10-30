@@ -46,6 +46,15 @@ Loads: **patterns.md (Section 2, 5, 6, 7, 9)**, **helper-rules.md**, **refactor-
 - Pure function principles
 - Library reuse patterns
 
+## Design Pattern Recognition
+
+When evaluating repeated structures, dispatch branches, adapters, shared state,
+or async composition, read
+[Biz-A Design Pattern Recognition](../../references/biz-a-design-pattern-recognition.md).
+Identify the existing pattern with file/function evidence, then justify any
+replacement by its concrete benefit. Prefer functional/plain-object structures
+and existing helpers; preserve business behavior and avoid unnecessary abstraction.
+
 ## Step 3 — Pre-Refactor Analysis
 
 ### Read the target file completely
@@ -138,7 +147,7 @@ Tell me what you refactored, and I'll:
 | `pk-field-config.md` | Form field configuration issues |
 | `biz-a.rules.instructions.md` | Always (mandatory rules) |
 
-No other knowledge loads unless you explicitly ask.
+Load other references only when the task signals match, including design-pattern recognition above.
 
 ### Form
 - Rapikan lifecycle sesuai `form-rules.md`:

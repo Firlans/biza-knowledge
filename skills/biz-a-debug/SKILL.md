@@ -30,6 +30,14 @@ Sebelum memulai, baca dokumen berikut menggunakan `read_file`:
 
 ---
 
+# Design Pattern Signals
+
+Jika gejala berkaitan dengan state closure/singleton, strategy dispatch, mapping
+adapter, listener ganda, wrapper async, atau antrean yang macet, baca
+[Biz-A Design Pattern Recognition](../../references/biz-a-design-pattern-recognition.md).
+Gunakan pattern untuk menelusuri contract, scope state, binding `this`, dan error
+path. Buktikan root cause; jangan mengganti struktur hanya karena nama pattern.
+
 # Step 3 — Diagnose
 
 Gunakan strategi dari `debug-reference.md`:

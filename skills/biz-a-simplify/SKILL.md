@@ -50,6 +50,15 @@ For each function in the target file, document:
 - **Wrapper**: does it only call one operation or simple native method?
 - **Library match**: does a library (lib_utility, lib_helper, lib_qry) have equivalent?
 
+### Recognize Useful Abstractions Before Removing Them
+
+When a function map, factory, closure, adapter, decorator, pipeline, or queue is
+present or proposed, read
+[Biz-A Design Pattern Recognition](../../references/biz-a-design-pattern-recognition.md).
+Check its contract and callers before inlining: a small adapter or factory can
+carry business meaning or isolate mutable config. Remove structure when it adds
+no useful behavior; do not introduce a design pattern merely to rename a wrapper.
+
 ### Step 3c — Identify 7 Anti-patterns
 
 #### 1. Dead Code — Zero Callers

@@ -1,6 +1,6 @@
 ---
 name: biz-a-normalize
-description: "Normalize repeated Biz-A form, list, and helper patterns into reusable helpers and libraries. Use when: pola berulang, repeated pattern, normalize, reusable function, pindah query/data logic ke lib_qry, manfaatkan lib_utility/helper yang tersedia, rapikan data access dari form/list."
+description: "Recognize and normalize Biz-A form, list, and helper patterns into reusable helpers and libraries. Use when: pattern recognition/recognation Biz-A, kenali atau pilih design pattern, pola berulang, repeated pattern, normalize, reusable function, pindah query/data logic ke lib_qry, rapikan data access dari form/list."
 ---
 
 # Biz-A Normalize
@@ -22,6 +22,14 @@ If editing lists, also read:
 - `.agents/references/list-rules.md`
 
 If the task touches a known local problem signal, read the matching problem reference from `.agents/references/` before broad repo search.
+
+## Recognize Before Extracting
+
+For pattern recognition, design-pattern selection, or repeated structures, read
+[Biz-A Design Pattern Recognition](../../references/biz-a-design-pattern-recognition.md).
+Match concrete code to pattern signals, check existing helpers, and choose the
+smallest useful functional/plain-object structure. Distinguish an existing pattern
+from a proposed change. If asked only to analyze, report findings without edits.
 
 ## Workflow
 

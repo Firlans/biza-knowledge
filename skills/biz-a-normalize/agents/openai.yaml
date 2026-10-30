@@ -1,7 +1,7 @@
 interface:
   display_name: "Biz-A Normalize"
-  short_description: "Normalize repeated Biz-A patterns."
-  default_prompt: "Use $biz-a-normalize to extract repeated Biz-A patterns, move data access into lib_qry, and reuse existing utility helpers."
+  short_description: "Recognize and normalize Biz-A design patterns."
+  default_prompt: "Use $biz-a-normalize to recognize useful functional/plain-object design patterns in Biz-A, reuse existing helpers, and normalize repeated code when implementation is requested."
 
 policy:
   allow_implicit_invocation: true

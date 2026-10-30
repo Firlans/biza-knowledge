@@ -71,6 +71,10 @@ applyTo: "**/*.js"
   round trip library dari pembukaan normal di Microsoft Excel.
 - Jika tidak ada reference yang cocok di INDEX.md, cari contoh lokal di repo
   dulu sebelum mempertimbangkan sumber eksternal.
+- Sebelum membuat atau mengubah setiap file Biz-A, wajib lakukan pattern
+  recognition sesuai `.agents/rules/pattern-recognition.rules.instructions.md`
+  dan baca `.agents/references/biz-a-design-pattern-recognition.md`, meskipun
+  task tidak menyebut design pattern. Pilih berdasarkan bukti dan kebutuhan.
 - Load hanya reference yang relevan dengan file dan task saat ini agar context
   tetap efisien.
 

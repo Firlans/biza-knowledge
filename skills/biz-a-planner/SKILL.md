@@ -21,6 +21,15 @@ Produce an implementation-ready Biz-A plan grounded in the current repository. C
 7. Write one Markdown file under `.agents/plans` using the required format below.
 8. Re-read the plan and verify that every planned change maps to a listed file and every acceptance criterion maps to a verification step.
 
+## Design Pattern Decisions
+
+If the plan involves repeated structures, interchangeable behavior, adapters,
+shared state, events, or async composition, read
+[Biz-A Design Pattern Recognition](../../references/biz-a-design-pattern-recognition.md).
+Record code evidence, the selected functional/plain-object pattern (or why a
+plain function suffices), its location, and behavior/validation implications in
+the existing plan sections. Do not implement the pattern while planning.
+
 ## Output Path
 
 - Ensure `.agents/plans` exists.

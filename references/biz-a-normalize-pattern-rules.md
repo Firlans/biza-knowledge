@@ -21,6 +21,7 @@ When those responsibilities stay in one file, every future change has to patch s
 
 ## Correct Approach
 
+- Saat memilih bentuk abstraksi, baca [Biz-A Design Pattern Recognition](biz-a-design-pattern-recognition.md). Cocokkan bukti kode dengan signal pattern, lalu pilih fungsi biasa atau pattern functional/plain-object yang memberi manfaat konkret.
 - Preserve existing behavior while moving responsibilities to the right boundary.
 - Move data-related behavior to `lib_qry` or the module's query library:
   - `queryData` calls,

@@ -49,6 +49,15 @@ Loads: **patterns.md (Section 2, 5, 6, 7, 9)**, **helper-rules.md**, **creation-
 - Utility functions deterministic and pure
 - Separation of concerns
 
+## Design Pattern Selection
+
+When the module needs repeated object creation, interchangeable behavior, data
+adapters, shared state, or async composition, read
+[Biz-A Design Pattern Recognition](../../references/biz-a-design-pattern-recognition.md).
+Prefer existing helpers and functional/plain-object patterns that solve a concrete
+need. Keep the standard Biz-A export and lifecycle; a simple module needs no extra
+pattern abstraction.
+
 ## Step 3 — Follow the Creation Workflow
 
 ### For Form
@@ -113,7 +122,7 @@ Tell me what you created, and I'll:
 | `pk-field-config.md` | Setting up form fields |
 | `biz-a.rules.instructions.md` | Always (mandatory rules) |
 
-No other knowledge loads unless you explicitly ask.
+Load other references only when the task signals match, including design-pattern selection above.
 
 ---
 

@@ -4,8 +4,14 @@ Semua skill, rules, referensi, dokumen pendukung, agent, dan command yang
 dipelihara untuk proyek ini berpusat di `.agents/`. Path dalam instruksi
 berawalan `.agents/` dihitung dari root repository.
 
+- Sebelum membuat atau mengubah setiap file proyek, wajib lakukan pattern
+  recognition sesuai `.agents/rules/pattern-recognition.rules.instructions.md`
+  dan baca `.agents/references/biz-a-design-pattern-recognition.md`.
 - Sebelum mengubah kode Biz-A, baca `.agents/rules/biz-a.rules.instructions.md`
   dan `.agents/references/INDEX.md`, lalu hanya referensi yang relevan.
+- Saat membuat/mengubah JavaScript atau menampilkan contoh kode JavaScript,
+  ikuti `.agents/rules/javascript-readable.rules.instructions.md`.
+  Utamakan keterbacaan; jangan memadatkan logika atau konfigurasi ke satu baris.
 - Gunakan skill Biz-A yang sesuai dari `.agents/skills/`: create, debug,
   refactor, simplify, normalize, planner, reviewer, atau control-center.
 - Untuk dokumentasi library, framework, SDK, API, CLI, atau cloud service,

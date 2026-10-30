@@ -8,6 +8,11 @@ yang paling cocok. Load hanya yang relevan agar context tetap efisien.
 | Trigger keywords / signals | Reference file |
 |---|---|
 | Tidak ada reference yang match | Cari contoh lokal di repo dulu, baru sumber eksternal. |
+| Learning Patterns PDF, learning-patterns-final-v1.1, Patterns.dev, Lydia Hallie, Addy Osmani, peta bab dan halaman sumber buku | `learning-patterns-reference.md` |
+| Pattern dari Learning Patterns, Proxy, Prototype, Mixin, Mediator, Flyweight, Command, pendalaman Factory/Module/Singleton/Observer | `learning-patterns-javascript-patterns.md` |
+| Provider, Container/Presentational, Render Props, Hooks, HOC/Higher-Order Component, Compound Component, prop drilling, reuse stateful logic | `learning-patterns-component-patterns.md` |
+| Rendering/performance patterns, CSR/SSR/SSG/iSSG, hydration, Server Components, Islands, loading sequence, import on visibility/interaction, route/bundle splitting, PRPL, tree shaking, preload/prefetch, list virtualization | `learning-patterns-rendering-performance.md` |
+| Wajib sebelum membuat/mengubah setiap file proyek; pattern recognition/recognation Biz-A, kenali atau pilih design pattern, functional/plain object, Factory, Builder, Module/Closure, Singleton, Adapter, Strategy, Decorator/HOF, Observer/Pub-Sub, Middleware/Pipeline, Async Queue/concurrency | `biz-a-design-pattern-recognition.md` |
 | add/save master record, penambahan data, FINA json2fina vs Biz-A sendModel, EXTENDEDDETID, Column unknown ID saat tambah supir, executeBlock untuk INSERT/UPDATE/DELETE, executeBlock hanya SELECT, raw SQL writes | `sendmodel-write-executeblock-select-rules.md` |
 | Excel download recovery, `We found a problem with some content`, SheetJS/ExcelJS header colors, `sheetFormatPr`, missing `defaultRowHeight`, XLSX round trip passes but Microsoft Excel rejects file, NPWP/KTP identifier strings | `excel-export-ooxml-recovery-problem.md` |
 | Biz-A Control Center, App Config, APPLICATION_CONFIG, DOMAIN_CONFIG, metadata wajib, metadata.version is required, source domain upload, analisis event binding dan handler library, library belum ditambahkan ke Biz-A, biza add library | `biz-a-control-center-config-rules.md` |
