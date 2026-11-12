@@ -36,6 +36,7 @@ Load these before broad repo search when the task signal matches:
 | Reference | Kapan dipakai |
 |---|---|
 | `biz-a-design-pattern-recognition.md` | Mengenali atau memilih functional/plain-object design patterns: Factory, Builder, Module, Singleton, Adapter, Strategy, Decorator, Observer, Middleware, dan Async Queue; cocokkan bukti kode dan hindari abstraksi yang tidak perlu |
+| `spiritia-report-menu-lifecycle-problem.md` | Spiritia Report menu numbering, `useLibrary` lifecycle collision, and one DOM observer across route changes |
 | `excel-export-ooxml-recovery-problem.md` | Excel downloads request recovery, SheetJS/ExcelJS header styling loses required `defaultRowHeight`, or library round trips pass while native Excel rejects the file |
 | `mobile-layout-rules.md` | Mobile layouts from prototypes, stacked header/filter fields, paired dates, master hub icon/description cards, blank mobile list cards, omitted native columns/actions, typed row IDs, and UI lifecycle cleanup |
 | `dialog-list-problem.md` | Opening record lists, history rows, selectable grids, or previously created records from a form |

@@ -19,6 +19,10 @@ applyTo: "**/*.js"
 - Sebelum mengubah kode Biz-A, baca `.agents/references/INDEX.md`
   (tabel trigger → file) untuk menentukan reference mana yang relevan dengan
   task, error, atau pattern yang sedang dikerjakan. Load hanya file yang match.
+- Jika mengubah penomoran menu Spiritia, pemuatan `main` sebagai library,
+  pemanggilan `onInit` lintas halaman, atau observer DOM menu yang berulang,
+  baca `.agents/references/spiritia-report-menu-lifecycle-problem.md` sebelum
+  mencari pola lain di repo.
 - Jika task menyentuh Biz-A Control Center, App Config, metadata aplikasi/domain,
   penamaan source domain yang diunggah, atau analisis wiring script domain, baca
   `.agents/references/biz-a-control-center-config-rules.md`.

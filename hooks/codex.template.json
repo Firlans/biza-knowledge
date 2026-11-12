@@ -9,7 +9,7 @@
             "command": "python3 -X utf8 \"{project_root}/.agents/hooks/read_rules.py\"",
             "commandWindows": "python -X utf8 \"{project_root}/.agents/hooks/read_rules.py\"",
             "timeout": 10,
-            "additionalContextLimit": 5000,
+            "additionalContextLimit": 8000,
             "statusMessage": "Memuat rules proyek"
           }
         ]
@@ -24,7 +24,7 @@
             "command": "python3 -X utf8 \"{project_root}/.agents/hooks/read_rules.py\"",
             "commandWindows": "python -X utf8 \"{project_root}/.agents/hooks/read_rules.py\"",
             "timeout": 10,
-            "additionalContextLimit": 5000,
+            "additionalContextLimit": 8000,
             "statusMessage": "Membaca rules sebelum eksekusi"
           }
         ]

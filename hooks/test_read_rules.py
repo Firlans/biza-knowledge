@@ -23,6 +23,14 @@ class RulesHookTests(unittest.TestCase):
         (self.rules / "biz-a.rules.instructions.md").write_text(
             "Core rules: preserve business behavior.", encoding="utf-8"
         )
+        self.pattern_rules = self.rules / "pattern-recognition.rules.instructions.md"
+        self.pattern_rules.write_text(
+            "Pattern rules: recognize patterns before every file change.", encoding="utf-8"
+        )
+        self.javascript_rules = self.rules / "javascript-readable.rules.instructions.md"
+        self.javascript_rules.write_text(
+            "JavaScript rules: use readable multiline logic and configuration.", encoding="utf-8"
+        )
 
     def test_delivers_full_rules_for_both_events_without_echoing_inputs(self):
         nested = self.rules / "exec/default.rules"
@@ -41,6 +49,8 @@ class RulesHookTests(unittest.TestCase):
                 context = output["additionalContext"]
                 self.assertIn("Project instructions: baca aturan.", context)
                 self.assertIn("Core rules: preserve business behavior.", context)
+                self.assertEqual(context.count(self.pattern_rules.read_text(encoding="utf-8")), 1)
+                self.assertEqual(context.count(self.javascript_rules.read_text(encoding="utf-8")), 1)
                 self.assertIn(nested.read_text(encoding="utf-8"), context)
                 self.assertNotIn("PRIVATE_", json.dumps(result))
                 self.assertNotIn("permissionDecision", output)
@@ -57,12 +67,57 @@ class RulesHookTests(unittest.TestCase):
         result = response({"hook_event_name": "UserPromptSubmit"}, self.root)
         self.assertEqual(result["decision"], "block")
 
+    def test_missing_pattern_rules_block_both_events(self):
+        self.pattern_rules.unlink()
+        for name in ["UserPromptSubmit", "PreToolUse"]:
+            with self.subTest(event=name):
+                result = response({"hook_event_name": name}, self.root)
+                self.assertEqual(result["decision"], "block")
+                self.assertIn("pattern-recognition.rules.instructions.md", result["reason"])
+                self.assertNotIn("hookSpecificOutput", result)
+
+    def test_empty_pattern_rules_block_both_events(self):
+        self.pattern_rules.write_text(" \n\t", encoding="utf-8")
+        for name in ["UserPromptSubmit", "PreToolUse"]:
+            with self.subTest(event=name):
+                result = response({"hook_event_name": name}, self.root)
+                self.assertEqual(result["decision"], "block")
+                self.assertIn("pattern-recognition.rules.instructions.md", result["reason"])
+                self.assertNotIn("hookSpecificOutput", result)
+
+    def test_missing_javascript_rules_block_both_events(self):
+        self.javascript_rules.unlink()
+        for name in ["UserPromptSubmit", "PreToolUse"]:
+            with self.subTest(event=name):
+                result = response({"hook_event_name": name}, self.root)
+                self.assertEqual(result["decision"], "block")
+                self.assertIn("javascript-readable.rules.instructions.md", result["reason"])
+                self.assertNotIn("hookSpecificOutput", result)
+
+    def test_empty_javascript_rules_block_both_events(self):
+        self.javascript_rules.write_text(" \n\t", encoding="utf-8")
+        for name in ["UserPromptSubmit", "PreToolUse"]:
+            with self.subTest(event=name):
+                result = response({"hook_event_name": name}, self.root)
+                self.assertEqual(result["decision"], "block")
+                self.assertIn("javascript-readable.rules.instructions.md", result["reason"])
+                self.assertNotIn("hookSpecificOutput", result)
+
     def test_rules_are_reread_after_changes(self):
-        event = {"hook_event_name": "PreToolUse"}
-        response(event, self.root)
+        for name in ["UserPromptSubmit", "PreToolUse"]:
+            response({"hook_event_name": name}, self.root)
+        self.pattern_rules.write_text("Updated pattern rules loaded immediately.", encoding="utf-8")
+        self.javascript_rules.write_text("Updated JavaScript rules loaded immediately.", encoding="utf-8")
         (self.rules / "new-rule.md").write_text("Fresh rule loaded immediately.", encoding="utf-8")
-        self.assertIn("Fresh rule loaded immediately.",
-                      response(event, self.root)["hookSpecificOutput"]["additionalContext"])
+        for name in ["UserPromptSubmit", "PreToolUse"]:
+            with self.subTest(event=name):
+                result = response({"hook_event_name": name}, self.root)
+                context = result["hookSpecificOutput"]["additionalContext"]
+                self.assertIn("Fresh rule loaded immediately.", context)
+                self.assertIn("Updated pattern rules loaded immediately.", context)
+                self.assertIn("Updated JavaScript rules loaded immediately.", context)
+                self.assertNotIn("Pattern rules: recognize patterns before every file change.", context)
+                self.assertNotIn("JavaScript rules: use readable multiline", context)
 
     def test_private_files_and_references_are_not_loaded(self):
         for name in [".env", ".agents/config/private/codex.toml", ".agents/references/example.md"]:

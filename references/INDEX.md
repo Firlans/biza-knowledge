@@ -8,6 +8,7 @@ yang paling cocok. Load hanya yang relevan agar context tetap efisien.
 | Trigger keywords / signals | Reference file |
 |---|---|
 | Tidak ada reference yang match | Cari contoh lokal di repo dulu, baru sumber eksternal. |
+| Spiritia Report submenu numbering, nomor menu hilang setelah pindah halaman, `main` di `useLibrary` menimpa `onInit`, observer DOM terpasang berulang | `spiritia-report-menu-lifecycle-problem.md` |
 | Learning Patterns PDF, learning-patterns-final-v1.1, Patterns.dev, Lydia Hallie, Addy Osmani, peta bab dan halaman sumber buku | `learning-patterns-reference.md` |
 | Pattern dari Learning Patterns, Proxy, Prototype, Mixin, Mediator, Flyweight, Command, pendalaman Factory/Module/Singleton/Observer | `learning-patterns-javascript-patterns.md` |
 | Provider, Container/Presentational, Render Props, Hooks, HOC/Higher-Order Component, Compound Component, prop drilling, reuse stateful logic | `learning-patterns-component-patterns.md` |

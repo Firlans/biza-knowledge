@@ -14,6 +14,8 @@ def load_rules(root):
     rules_dir = root / ".agents/rules"
     required = [
         root / ".agents/instructions/project.md",
+        rules_dir / "pattern-recognition.rules.instructions.md",
+        rules_dir / "javascript-readable.rules.instructions.md",
         rules_dir / "biz-a.rules.instructions.md",
     ]
     files = required + sorted(
@@ -23,6 +25,8 @@ def load_rules(root):
     sections = [
         "Aturan proyek dimuat dari .agents/ sebelum operasi ini. "
         "Ikuti setiap aturan sesuai cakupan task dan file. "
+        "Sebelum membuat atau mengubah file, terapkan pattern recognition. "
+        "Saat menulis JavaScript, utamakan format multiline yang readable. "
         "Sebelum mengubah kode Biz-A, baca .agents/references/INDEX.md "
         "dan hanya referensi yang relevan."
     ]
