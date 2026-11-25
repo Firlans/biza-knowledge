@@ -33,6 +33,18 @@ Use `backgroundColor` and text `color` inside each target column's `style` objec
 
 Prefer soft solid colors when the user asks for full opacity but "not too red". For example, use `#f8d7da` for a light red background and `#842029` for readable dark red text.
 
+## Vertical Column Dividers
+
+When a detail grid already has an outer border, set `style.borderInlineEnd` on
+each visible column that has a column after it. The outer border frames the
+final column. Use the theme outline color and merge the divider into any
+existing column styles, such as a quantity cell background.
+
+In the Item Transfer shipment form, the quantity background was visible in
+both the header and body. The divider configuration was checked locally for
+both grids. When verifying the target UI, check alignment between header and
+body and the edge of the final column. [Shipment form](<../../Endo Medika/itemTransferShipmentForm.js>)
+
 ## What To Avoid
 
 - Do not inject global CSS just to color a single `detail-grid`'s columns.

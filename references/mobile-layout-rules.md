@@ -10,6 +10,7 @@ Reference implementasi lokal: Missi Idea `lib_ui`, `quotationForm`, dan
 
 - Header/master form atau filter masih dua kolom sempit pada HP.
 - Pasangan tanggal perlu bersebelahan tetapi semua field ditumpuk ke bawah.
+- Jarak antarfield tetap lebar saat `gap` grup sudah kecil.
 - List memiliki data dan jumlah baris, tetapi kartu kosong atau tombol hilang.
 - Warna kartu tetap polos/abu-abu atau menu tidak memiliki keterangan prototipe.
 - Lookup hanya menampilkan placeholder saat membuat data baru.
@@ -68,6 +69,15 @@ runtime. Override internal Material hanya jika DOM target sudah diperiksa;
 scope pada grup tanggal. Separator `s/d` jangan mengambil kolom ketiga jika
 desain meminta dua kontrol dengan lebar sama.
 
+Jika jarak tetap lebar, ukur tinggi field dan ruang untuk hint atau error
+di bawahnya sebelum mengubah `gap`. Pada fixture Stock Opname, pseudo-element
+`.mat-mdc-form-field-bottom-align::before` mencadangkan ruang saat pesan kosong.
+CSS mobile yang dibatasi ke grup field terkait menghapus pseudo-element itu dan
+mengatur wrapper hint dan error ke `position: static` agar pesan yang muncul
+tetap mengambil ruang. Di fixture Chrome, jarak antarlookup menjadi 8 px dan
+pesan validasi tetap menambah tinggi field. Periksa kembali computed style dan
+pesan panjang pada DOM Biz-A target. [CSS Stock Opname](<../../Endo Medika/lib_ui.js>)
+
 ### 2. Reuse helper tampilan dengan scope halaman
 
 - Pisahkan CSS, dekorasi DOM, dan cleanup ke library UI lokal yang dipakai
@@ -80,6 +90,15 @@ desain meminta dua kontrol dengan lebar sama.
   sel, dan tombol yang sama tidak dibuat dua kali. Tulis text hanya jika berubah.
 - Jika mengamati `characterData`, pastikan perubahan buatan helper berhenti
   setelah DOM mencapai state yang sama; jangan membuat loop dekorasi.
+
+Jika teks dari observer kosong sementara kontrol di sekitarnya tampil, periksa
+DOM hasil render template Formly. Pada Stock Opname, `DomSanitizer` Angular 20.3
+membuang penanda `data-*` di dalam HTML template. Pakai kelas CSS milik modul
+sebagai penanda elemen, `role="status"` untuk status yang berubah, dan perbarui
+`textContent` ketika nilainya berubah. Uji memakai markup setelah sanitasi,
+misalnya periksa indikator pagination setelah klik tombol Berikutnya.
+[Sumber Angular](https://github.com/angular/angular/blob/main/packages/core/src/sanitization/html_sanitizer.ts#L927-L969)
+[Contoh Stock Opname](<../../Endo Medika/lib_ui.js>)
 
 ### 3. Bedakan native list dan form detail-grid
 

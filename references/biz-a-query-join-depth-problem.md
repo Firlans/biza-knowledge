@@ -26,6 +26,22 @@ Another common mistake is replacing the deep join with a query to a table that d
 - When a list starts with a plain table field before a computed SQL subquery, retain that first field in `columns` on every reload. Removing it can make the SQL builder treat `(select ...)` as the base table and produce `Token unknown ... select`. Hide the query-only field by excluding its key from `displayedColumns`; keep `columns` and button indexes intact. Build display keys as `column.data + column.title` rather than deleting the first displayed key blindly.
 - If a denormalized field exists on a nearer table, use it. Example: if `workshop_sales.job_number` exists, load `job_number` from `workshop_sales`, not through `spr` or `joa_sub_job`.
 
+## Nested filters in `queryData`
+
+When a Biz-A request returns `Unexpected end of command` and a filter value
+contains a multiline subquery with nested conditions, inspect the serialized
+request. During Delivery Order edit, the Sales Order picker hit this error on
+a nested `IN` subquery even though the subquery ran in a standalone Firebird
+fixture. Treat standalone SQL, serialized filters, and the target API as
+separate checks.
+
+Reuse a working filter for each independent source. The picker uses its original
+outstanding query and loads linked Sales Orders in a second query with a
+numeric ID list. Apply the customer filter to both queries and merge by
+Sales Order ID. Test the generated request filters, duplicate IDs, closed
+linked orders, and orders outside the customer scope. Verify the target API
+when it is available. [Delivery Order query](<../../Endo Medika/lib_qry.js>)
+
 ## BO Maintain Pattern
 
 For BO Maintain collect rows:
