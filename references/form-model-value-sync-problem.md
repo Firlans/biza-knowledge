@@ -1,8 +1,8 @@
 # Form And Model Value Sync Problem
 
 Use this reference when a Biz-A form loses recent user input after a dialog,
-step change, lookup selection, repeat update, detail-grid refresh, or any action
-that rebuilds or replaces `this.model`.
+step change, lookup selection, repeat update, or detail-grid refresh. It also
+covers a form that loses saved values while opening an existing record.
 
 ## Problem Signal
 
@@ -11,7 +11,8 @@ that rebuilds or replaces `this.model`.
 - `this.form.value` contains the latest value while `this.model` is stale.
 - A handler spreads or clones `this.model` and unintentionally restores old
   values over controls that the user already edited.
-- The failure appears only after a dialog or UI action, not during initial load.
+- View or Edit opens with blank fields or detail rows even though the initial
+  query returned the saved record.
 
 ## Root Cause
 
@@ -56,6 +57,22 @@ const currentModel = {
 `this.form.value` may omit disabled controls, so always spread `this.model`
 first. This retains model-only values and lets active form controls override
 only the keys they currently own.
+
+## Initial load of an existing record
+
+While controls still hold their initial values, build the model from the query
+result and include derived rows such as the attachment list in the same
+assignment. A refresh helper that snapshots `this.form.value` at this point can
+copy `null` or `[]` over saved header fields and detail rows. Apply the loaded
+lookup values and use `assignData` on the detail-grid before installing listeners
+that react to these fields. Use the active-form snapshot once the controls hold
+the current edits.
+
+In the Missi Idea PO Client regression tests, both View and Edit start with
+empty control values while the mocked query returns saved data. The tests check
+the loaded header, selected lookup IDs, grid rows, and attachment list.
+[PO Client form](<../../Missi Idea/poClientForm.js>)
+[Regression tests](<../../Missi Idea/tests/poClientAttachments.test.js>)
 
 ## Implementation Checklist
 
