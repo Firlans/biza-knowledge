@@ -48,6 +48,21 @@ index. Keep using the original Biz-A configuration for audit writes and
 Biz-A budget reads. See the [ASATA query helper](../../Asata/trunk/lib_qry.js)
 and [Spiritia TB USD](../../Spiritia/v2/reportTBUSD2.js).
 
+When Spiritia reports accept `ip_address` from the form URL, apply it to
+requests already designed to connect directly to local FINA. Inspect the code
+that actually sends the request. An IP in a commented transport or an unused
+host variable does not indicate a local request. Anvar IDR and regular Anvar
+USD use the configured API, while Anvar USD Local, Forex, and TB USD call
+the shared local endpoint helper.
+
+In these reports the helper accepts `localhost` or a valid local IPv4 address
+and uses port 212. It uses the report's deployment default when the parameter
+is absent. Verify the endpoint, FINA database index, and empty subdomain on
+the local request alongside the configured targets for the budget and audit.
+A malformed address should fail before SQL runs. See
+[the Spiritia endpoint helper](../../Spiritia/Trunk/lib_utility.js) and
+[the route regression tests](../../Spiritia/Trunk/tests/reportIntegrity.test.js).
+
 For a report built from several blocks, pair each SQL statement with the result
 key the renderer expects. Follow the existing sequential pipeline with
 `concatMap` and check each response before running the next block. Spiritia

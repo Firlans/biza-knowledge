@@ -64,6 +64,16 @@ beforeLoadData: function () {
 
 Remove `props.addBtn` and `props.deleteBtn` from the detail-grid when the form uses manual Add/Delete controls. Mixing internal and manual controls makes visibility hard to reason about.
 
+## Custom row button opens no dialog
+
+If the button renders and clicking it opens no dialog, check the column `key`
+and the arguments passed to `onClick`. In the Pelunasan discount column, the
+grid passes the selected cell value and row index. Set the action column key
+to `arinvoiceid`, pass the cell value to the named handler, and use that ID to
+find the invoice in the current form rows. The regression calls the configured
+button with the cell value and index, then checks the dialog and that its
+result updates the chosen invoice. [Pelunasan form](../../Proton/pelunasanMultiForm.js) · [Regression](../../Proton/tests/pelunasanMulti.test.js)
+
 ## Implementation Checklist
 
 - Identify whether the visible delete control comes from `props.deleteBtn` or `columns[].buttons`.

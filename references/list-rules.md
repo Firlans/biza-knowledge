@@ -24,6 +24,21 @@ Ikuti **Section 4 (List Structure Pattern)** dan **Section 8 (Authorization & Pr
 - Jaga top-level action buttons tetap deklaratif kecuali project menggunakan pattern lokal lain.
 - Delete flow ikuti Section 17 `patterns.md` (detail dulu, baru master untuk Biz-A; atau `delete: 1` untuk FINA).
 
+## Paginasi kembali ke halaman pertama
+
+Jika tombol Next aktif tetapi range tetap pada halaman pertama, periksa nilai
+`paginator.pageIndex` dan filter sebelum dan sesudah `beforeLoadData`. Runtime
+Page List Pelunasan memanggil hook itu sebelum `loadData` pada setiap event
+paginasi. Reset indeks atau filter di dalam hook membuat query kehilangan
+halaman atau filter yang baru dipilih.
+
+Jalankan inisialisasi dan pemasangan listener sekali per kunjungan list. Bersihkan
+state kunjungan dan subscription ketika keluar. Lakukan reset indeks saat
+pengguna menjalankan Search atau Reset. Untuk regresi, jalankan urutan
+`beforeLoadData` lalu `loadData` dengan filter aktif, pindah maju dan mundur,
+dan periksa indeks serta filter yang dipakai query. Uji juga saat list dibuka
+kembali. [List Pelunasan](../../Proton/pelunasanList.js) · [Tes](../../Proton/tests/pelunasanMulti.test.js)
+
 ## Mapping Warehouse pada transaksi antargudang
 
 Jika user gudang pemberi memiliki privilege `confirm` tetapi request masuk

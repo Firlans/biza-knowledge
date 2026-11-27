@@ -586,6 +586,22 @@ this.f().setActionUsingKey(
 )
 ```
 
+### Custom privilege per aksi
+
+Gunakan `getCustomPrivileges(userId, menu)` bila izin ditentukan oleh custom
+privilege. Parameter `menu` harus sesuai dengan nilai `menu` pada konfigurasi
+Biz-A. Helper mengambil entri yang memiliki `access: true`. Cocokkan key aksi
+yang stabil, seperti `view`, `create`, `edit`, dan `delete`, dengan tombol dan
+handler masing-masing.
+
+Validasi izin mode saat form dibuka, termasuk saat pengguna memakai URL
+langsung. Periksa ulang izin sebelum simpan atau hapus agar perubahan izin
+setelah halaman terbuka ikut berlaku. Uji setiap grant secara terpisah, akses
+URL langsung, dan pencabutan izin sebelum write. Pada Pelunasan, izin `create`
+saja membuka form tambah dan `view`, `edit`, atau `delete` memberi akses ke
+baris list untuk memilih transaksi. Aksi View sendiri memerlukan `view`.
+[Helper dan parser](../../Proton/lib_authorization.js) · [Regresi](../../Proton/tests/pelunasanMulti.test.js)
+
 ### setControlDataList
 
 Filter data list berdasarkan konfigurasi per user group:

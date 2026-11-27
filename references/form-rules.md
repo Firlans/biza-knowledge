@@ -22,6 +22,25 @@ Ikuti **Section 3 (Form Structure Pattern)** dan **Section 10 (Detail Grid Patte
 - Simpan save flow di satu named action handler dan merge `this.model` dengan `this.form.value` sebelum validation/payload mapping.
 - Validasi respons `sendModel` dengan `response.error`, `json2fina` dengan `res.result?.[0]?.error`, dan `fml2fina` dengan `res.result?.[0]?.error` / `res.error` / `res.message` sebelum success path.
 
+## Callback tombol yang dibentuk ulang
+
+Callback Formly pada `props.onClick` perlu bisa berjalan saat runtime
+mengeksekusi ulang source function secara terpisah. Pada tombol Add laporan
+Spiritia, callback membaca `key` dari scope `.map()` yang membentuk field.
+Klik memunculkan `ReferenceError: key is not defined`. Gejala yang sama
+muncul saat source callback dievaluasi ulang di VM tanpa scope pembentuknya.
+
+- Teruskan key field sebagai literal dari callback ke named action handler.
+  Pertahankan binding `this` untuk mengakses fungsi dan layanan form.
+- Tes dengan evaluasi ulang `onClick.toString()` di konteks baru, panggil dengan
+  binding form, lalu periksa bahwa setiap tombol meneruskan key field yang
+  bersangkutan.
+- Pola ini berlaku pada callback konfigurasi yang dibentuk ulang. Callback
+  RxJS yang dibuat saat handler berjalan tetap dapat memakai scope lokal.
+
+Lihat [konfigurasi Add SUF IDR](../../Spiritia/Trunk/report16.js) dan
+[tes regresi laporan](../../Spiritia/Trunk/tests/reportIntegrity.test.js).
+
 ## Style Targets
 
 - Pertahankan standard Biz-A module export: `get = function () { return { ... } }` dan `module.exports = get` (Section 1).
