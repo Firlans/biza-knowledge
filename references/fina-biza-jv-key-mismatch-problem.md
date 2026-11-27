@@ -72,6 +72,19 @@ const param = {
 5. In local Biz-A cross-reference queries, use `JV.jvid_fina` to find the local row and use `JV.id` only for Biz-A columns.
 6. Avoid broad replace operations for `JV.ID` or `jv.id`; change only the path whose database boundary is known.
 
+## Returning from JV Edit to Account History
+
+Keep the report's applied filters and selected result identity in user-scoped
+session storage before leaving the report. In Spiritia, the result key combines
+the source database with the posting row ID. Several postings can share the
+same displayed `JVNUMBER`. On Save or Cancel, reload with the saved filters
+and use the posting identity to find the original row. If it is no longer in
+the results, fall back to the displayed reference or previous position.
+
+Test the return route with two result rows that share the displayed number
+and have different posting IDs. See the [Spiritia report](../../Spiritia/v2/reportHistory.js)
+and [regression test](../../Spiritia/v2/tests/reportHistoryDrillDown.test.js).
+
 ## What To Avoid
 
 - Do not use `JV.ID` in a `queryData` call whose `dbIndex` is `config.api.finaDbIndex`.

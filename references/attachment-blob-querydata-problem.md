@@ -108,6 +108,48 @@ Add focused tests that prove:
 - Edit mode can load attachment from a separate query and map it into the form model.
 - The normal module test suite still passes after attachment changes.
 
+## Linking an uploaded row to its document
+
+When the upload has already created a child row and its parent key is still
+null, check which keys the save uses to find that row. In the Spiritia
+Document Bank, Firebird 2.5 reproduced `validation error for column
+"SP_BANK_DOC_FILE"."FILE_NAME"` when a test upsert matched both attachment ID
+and the new parent ID. The staged row missed the match, so the statement tried
+to insert it. Supplying the name in that test exposed a duplicate primary key.
+
+- If the error names an unknown parent column instead, compare the ORM's
+  expected `<MASTER_TABLE>_ID` column with the child schema. Spiritia needed
+  `SP_BANK_DOCUMENT_ID`. Keep the read filter, save keys, foreign key, triggers,
+  and list view aligned when migrating an existing database.
+- Use the attachment's existing primary key for a direct `sendModel` call
+  to the child table. Pass its name and parent key as metadata. Keep the
+  content in the BLOB saved via `updateImg`.
+- Save the parent revision before applying the changes to attachments. Track
+  the confirmed revision and uploaded IDs in the form. If linking fails,
+  report partial completion and retry the pending changes with those IDs.
+- Test the transition from a null parent key to the saved parent and verify
+  that the existing BLOB bytes are preserved. Cover a failure after one of
+  several links succeeds, then verify the retry skips that link and reuses the
+  upload for the remaining rows.
+
+See the [Spiritia save flow](../../Spiritia/v2/lib_documentBank.js) and
+[attachment regressions](../../Spiritia/v2/tests/documentBank.test.js).
+
+## Picker and preview with a separate attachment grid
+
+- Subscribe to the native `attachments` control's `valueChanges` in its field
+  hook. If the detail grid owns both pending and saved rows, move valid entries
+  from `uploads` into that grid and clear the picker value once. Test selection
+  twice in a row and mixed valid and invalid files. Stage the files until the
+  user clicks Save.
+- For preview in a new tab, open the tab during the Preview click and then
+  fetch a saved file. Render the resulting Blob in the new tab. A delayed
+  response should replace the loading state with the image, PDF, or an error.
+  Keep the Download handler separate and verify in a browser that Preview
+  displays the bytes without starting a download.
+
+See the [Spiritia attachment picker](../../Spiritia/v2/documentBankForm.js).
+
 ## Related Files And Patterns
 
 - `form-rules.md` for form save-flow responsibilities.

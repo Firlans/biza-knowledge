@@ -100,6 +100,18 @@ misalnya periksa indikator pagination setelah klik tombol Berikutnya.
 [Sumber Angular](https://github.com/angular/angular/blob/main/packages/core/src/sanitization/html_sanitizer.ts#L927-L969)
 [Contoh Stock Opname](<../../Endo Medika/lib_ui.js>)
 
+Pada template Formly yang diuji di Spiritia, sanitizer juga membuang atribut
+`id` dan `style`. Untuk lebar batang grafik, template memakai kelas persentase
+dengan aturan CSS yang dibatasi ke Dashboard. Periksa markup setelah sanitasi
+dan ukur batang pada lebar desktop serta ponsel.
+[Dashboard Karyawan](../../Spiritia/v2/employeeProfilePage.js)
+
+Jika latar dan border banner terpecah di sekitar teks, periksa `display` host
+`formly-field`. Pada Main Spiritia, host inline membagi border ketika isinya
+berbentuk blok. Untuk banner berbasis `fieldGroup`, letakkan class alert di
+`fieldGroupClassName` agar diterapkan pada `formly-group` yang membungkus semua
+isi. Pastikan grup dan host memakai layout block atau flex sesuai kebutuhan.
+
 ### 3. Bedakan native list dan form detail-grid
 
 | Jenis | Metadata | Perilaku yang harus dipertahankan |

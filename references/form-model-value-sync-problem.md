@@ -74,6 +74,25 @@ the loaded header, selected lookup IDs, grid rows, and attachment list.
 [PO Client form](<../../Missi Idea/poClientForm.js>)
 [Regression tests](<../../Missi Idea/tests/poClientAttachments.test.js>)
 
+## Refresh derived fields after an async response
+
+If a loading message stays visible after a read has populated the model, check
+when Formly evaluates the expressions for the affected fields. The Biz-A build
+observed in Spiritia uses `checkExpressionOn: "modelChange"`. Changes emitted by
+form controls trigger evaluation. Direct model mutations from a separate API
+callback can leave `hide` and `props.url` expressions showing their old values.
+
+Update the existing model properties, then call `field.options.detectChanges(field)`
+on the populated Formly field or group that owns those expressions. Handle both
+the success and failure displays. This preserves the active controls and their
+unsaved values. A response that arrives before Formly builds the fields supplies
+their initial model state.
+
+Test a delayed response after the loading state has rendered. Verify the image
+or error appears before any click, keystroke, or control change. A fixture that
+automatically renders every model assignment can hide this regression.
+[Profile photo refresh](../../Spiritia/v2/lib_employeeDialogs.js)
+
 ## Implementation Checklist
 
 - Before any active-form model replacement, merge

@@ -540,6 +540,20 @@ convertToWord: function (nominal) {
 
 ## 8. Authorization & Privilege Pattern (lib_authorization)
 
+### Sesi Supervisor dengan ID 0
+
+Runtime Biz-A yang diperiksa di Spiritia mengenali ID sesi `"0"` sebagai
+Supervisor. Teruskan nilai asli dari `storageService.getCurrentUser()` ke
+`dataService.isAdministrator(userId, api)` agar perbandingan string bawaan tetap
+berlaku. Jika query role aplikasi memakai angka, izinkan `"0"` dan `0` pada
+jalur identitas sesi, lalu gunakan hasil mapping untuk menentukan cakupan.
+Validasi ID record positif tetap berlaku untuk record bisnis.
+
+Uji sesi `"0"` pada halaman yang memakai Administrator dan pada halaman yang
+memakai mapping role. Uji juga respons mapping kosong agar cakupan hanya
+diberikan oleh mapping yang sah.
+[Regresi otorisasi Spiritia](../../Spiritia/v2/tests/employeeMaintenance.test.js)
+
 ### getGroupNames
 
 Ambil daftar user group dari user yang sedang login:
